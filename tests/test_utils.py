@@ -1,6 +1,6 @@
 import pytest
 
-from plone_restapi_client import Session
+from affen import Session
 
 
 @pytest.mark.vcr

@@ -4,7 +4,7 @@ import pytest
 from hypothesis import given
 from hypothesis.provisional import urls
 
-from plone_restapi_client import Session, api
+from affen import Session, api
 
 
 @given(urls())
@@ -56,7 +56,7 @@ def test_does_not_unauthenticate_when_root_stays_the_same():
 def test_repr():
     s = repr(Session())
     assert api.ANONYMOUS_USER in s
-    assert "plone_restapi_client" in s
+    assert "affen" in s
     assert "Session" in s
 
 

@@ -7,7 +7,7 @@ from typing import Generator
 import pytest
 from requests import ConnectionError, get
 
-from plone_restapi_client import Session
+from affen import Session
 
 
 def docker_run(host, port, site) -> str:

@@ -1,7 +1,7 @@
 [project]
-name = "plone-restapi-client"
+name = "Affen"
 version = "0.1.0"
-description = ""
+description = "plone.restapi for Humans™"
 authors = [
     {name = "Chris Wesseling", email = "Chris.Wesseling@cwi.nl"},
 ]
@@ -13,7 +13,7 @@ dynamic = ["classifiers"]
 license = {text = "MPL-2.0"}
 
 [project.urls]
-homepage = ""
+homepage = "https://github.com/CharString/affen"
 
 [project.optional-dependencies]
 [build-system]
@@ -27,7 +27,7 @@ line-length = 79
 
 [tool.coverage]
 [tool.coverage.run]
-source = ["plone_restapi_client"]
+source = ["affen"]
 [tool.coverage.report]
 exclude_lines = [
     ".raise_for_status()",

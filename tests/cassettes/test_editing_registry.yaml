@@ -1,0 +1,138 @@
+interactions:
+- request:
+    body: '{"plone.allow_anon_views_about": true}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '38'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: PATCH
+    uri: http://127.0.0.1:8080/Plone/@registry
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - close
+      Date:
+      - Fri, 30 Jul 2021 01:16:09 GMT
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: GET
+    uri: http://127.0.0.1:8080/Plone/@registry/plone.allow_anon_views_about
+  response:
+    body:
+      string: 'true'
+    headers:
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:09 GMT
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"plone.allow_anon_views_about": false}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '39'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: PATCH
+    uri: http://127.0.0.1:8080/Plone/@registry
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - close
+      Date:
+      - Fri, 30 Jul 2021 01:16:09 GMT
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: GET
+    uri: http://127.0.0.1:8080/Plone/@registry/plone.allow_anon_views_about
+  response:
+    body:
+      string: 'false'
+    headers:
+      Content-Length:
+      - '5'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:09 GMT
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 200
+      message: OK
+version: 1

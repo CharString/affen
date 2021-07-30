@@ -1,0 +1,461 @@
+interactions:
+- request:
+    body: '{"login": "admin", "password": "admin"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '39'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/@login
+  response:
+    body:
+      string: "{\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTYyNzY1MDk2OCwiZnVsbG5hbWUiOm51bGx9.nuAEtSAW1ScAoWWSgbOzkcAfnRZqEZIWR26kohuQG1U\"\n}"
+    headers:
+      Content-Length:
+      - '162'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:08 GMT
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: GET
+    uri: http://127.0.0.1:8080/Plone/prefs_install_products_form
+  response:
+    body:
+      string: "<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">\n\n
+        \   \n\n  <head>\n\n<title>Plone site</title>\n\n<meta name=\"viewport\" content=\"width=device-width,
+        initial-scale=1.0\">\n\n    \n    \n        \n            \n        \n    \n
+        \   \n    \n\n    <script>PORTAL_URL = 'http://127.0.0.1:8080/Plone';</script>\n\n\n
+        \ \n\n    \n\n    \n\n    <script type=\"text/javascript\" src=\"http://127.0.0.1:8080/Plone/++plone++production/++unique++2021-07-30T01:15:51.953213/default.js\"
+        data-bundle=\"production\"></script>\n\n    \n\n    \n\n  \n\n  \n\n    \n\n
+        \   \n\n    <script type=\"text/javascript\" src=\"http://127.0.0.1:8080/Plone/++plone++production/++unique++2021-07-30T01:15:51.953213/logged-in.js\"
+        data-bundle=\"production\"></script>\n\n    \n\n    \n\n  \n\n\n    \n\n    <link
+        rel=\"stylesheet\" href=\"http://127.0.0.1:8080/Plone/++plone++production/++unique++2021-07-30T01:15:51.953213/default.css\"
+        data-bundle=\"production\"><link rel=\"stylesheet\" href=\"http://127.0.0.1:8080/Plone/++plone++production/++unique++2021-07-30T01:15:51.953213/logged-in.css\"
+        data-bundle=\"production\">\n\n\n    <link rel=\"alternate\" href=\"http://127.0.0.1:8080/Plone/news/aggregator/RSS\"
+        title=\"News - b'RSS 1.0'\" type=\"application/rss+xml\">\n\n    <link rel=\"alternate\"
+        href=\"http://127.0.0.1:8080/Plone/news/aggregator/rss.xml\" title=\"News
+        - b'RSS 2.0'\" type=\"application/rss+xml\">\n\n    <link rel=\"alternate\"
+        href=\"http://127.0.0.1:8080/Plone/news/aggregator/atom.xml\" title=\"News
+        - b'Atom'\" type=\"application/rss+xml\">\n\n    <link rel=\"alternate\" href=\"http://127.0.0.1:8080/Plone/RSS\"
+        title=\" - b'RSS 1.0'\" type=\"application/rss+xml\">\n\n    <link rel=\"alternate\"
+        href=\"http://127.0.0.1:8080/Plone/rss.xml\" title=\" - b'RSS 2.0'\" type=\"application/rss+xml\">\n\n
+        \   <link rel=\"alternate\" href=\"http://127.0.0.1:8080/Plone/atom.xml\"
+        title=\" - b'Atom'\" type=\"application/rss+xml\">\n\n\n    <link rel=\"author\"
+        href=\"http://127.0.0.1:8080/Plone/author/\" title=\"Author information\">\n\n\n
+        \   <link rel=\"canonical\" href=\"http://127.0.0.1:8080/Plone\">\n\n    <link
+        rel=\"shortcut icon\" type=\"image/x-icon\" href=\"http://127.0.0.1:8080/Plone/favicon.ico\">\n
+        \   <link rel=\"apple-touch-icon\" href=\"http://127.0.0.1:8080/Plone/touch_icon.png\">\n\n\n\n
+        \   <link rel=\"search\" href=\"http://127.0.0.1:8080/Plone/@@search\" title=\"Search
+        this site\">\n\n\n\n\n    <meta name=\"generator\" content=\"Plone - http://plone.com\">\n\n
+        \ </head>\n\n  <body id=\"visual-portal-wrapper\" class=\"icons-on plone-toolbar-expanded
+        plone-toolbar-left plone-toolbar-left-expanded portaltype-plone-site site-Plone
+        template-prefs_install_products_form thumbs-on userrole-authenticated userrole-manager
+        userrole-owner viewpermission-manage-portal\" dir=\"ltr\" data-base-url=\"http://127.0.0.1:8080/Plone\"
+        data-view-url=\"http://127.0.0.1:8080/Plone\" data-portal-url=\"http://127.0.0.1:8080/Plone\"
+        data-i18ncatalogurl=\"http://127.0.0.1:8080/Plone/plonejsi18n\" data-pat-pickadate='{\"date\":
+        {\"selectYears\": 200}, \"time\": {\"interval\": 5 } }' data-pat-plone-modal='{\"actionOptions\":
+        {\"displayInModal\": false}}'>\n\n    <section id=\"edit-bar\" role=\"toolbar\">\n
+        \ <div id=\"edit-zone\" role=\"toolbar\" class=\"pat-toolbar\" data-pat-toolbar='{\"toolbar_width\":
+        \"120px\", \"submenu_width\": \"180px\", \"desktop_width\": \"768px\"}'>\n
+        \   <div class=\"plone-toolbar-container\">\n      <a class=\"plone-toolbar-logo\">\n
+        \       <img alt=\"Plone Toolbar\" src=\"http://127.0.0.1:8080/Plone/++plone++static/plone-toolbarlogo.svg\">\n
+        \     </a>\n      \n      <nav>\n        <ul class=\"plone-toolbar-main\">\n
+        \         \n\n        </ul>\n        <ul id=\"personal-bar-container\">\n
+        \         <li id=\"portal-personaltools\" class=\"plone-toolbar-separator\">\n
+        \           <a href=\"http://127.0.0.1:8080/Plone/useractions\">\n              <span
+        class=\"icon-user\" aria-hidden=\"true\"></span>\n              <span>admin</span>\n
+        \             <span class=\"plone-toolbar-caret\"></span>\n            </a>\n
+        \           <ul>\n              <li class=\"plone-toolbar-submenu-header\">\n
+        \               <span>admin</span>\n              </li>\n              <li
+        class=\"user-action\">\n                <a title=\"Preferences\" href=\"http://127.0.0.1:8080/Plone/@@personal-preferences\"
+        id=\"personaltools-preferences\">\n                  Preferences\n                  \n
+        \               </a>\n              </li>\n              <li class=\"user-action\">\n
+        \               <a title=\"Dashboard\" href=\"http://127.0.0.1:8080/Plone/dashboard\"
+        id=\"personaltools-dashboard\">\n                  Dashboard\n                  \n
+        \               </a>\n              </li>\n              <li class=\"user-action\">\n
+        \               <a title=\"Site Setup\" href=\"http://127.0.0.1:8080/Plone/@@overview-controlpanel\"
+        id=\"personaltools-plone_setup\">\n                  Site Setup\n                  \n
+        \               </a>\n              </li>\n              <li class=\"user-action\">\n
+        \               <a title=\"Log out\" href=\"http://127.0.0.1:8080/Plone/logout\"
+        id=\"personaltools-logout\">\n                  Log out\n                  \n
+        \                   <span class=\"icon-logout\"></span>\n                  \n
+        \               </a>\n              </li>\n            </ul>\n          </li>\n
+        \       </ul>\n      </nav>\n    </div>\n  </div>\n</section>\n\n\n    <header
+        id=\"portal-top\">\n      <div id=\"portal-header\">\n    <a id=\"portal-logo\"
+        title=\"\" href=\"http://127.0.0.1:8080/Plone\">\n    <img src=\"http://127.0.0.1:8080/Plone/logo.png\"
+        alt=\"Plone site\" title=\"Plone site\"></a>\n\n<div id=\"portal-searchbox\">\n\n
+        \   <form id=\"searchGadget_form\" action=\"http://127.0.0.1:8080/Plone/@@search\"
+        role=\"search\" data-pat-livesearch=\"ajaxUrl:http://127.0.0.1:8080/Plone/@@ajax-search\"
+        class=\"pat-livesearch\">\n\n        <div class=\"LSBox\">\n        <label
+        class=\"hiddenStructure\" for=\"searchGadget\">Search Site</label>\n             \n
+        \       <div class=\"searchSection\">\n            <input id=\"searchbox_currentfolder_only\"
+        class=\"noborder\" type=\"checkbox\" name=\"path\" value=\"/Plone\">\n            <label
+        for=\"searchbox_currentfolder_only\" style=\"cursor: pointer\">only in current
+        section</label>\n        </div>\n             \n        <input name=\"SearchableText\"
+        type=\"text\" size=\"18\" id=\"searchGadget\" title=\"Search Site\" placeholder=\"Search
+        Site\" class=\"searchField\">\n\n        <input class=\"searchButton\" type=\"submit\"
+        value=\"Search\">\n\n         </div>\n    </form>\n\n    <div id=\"portal-advanced-search\"
+        class=\"hiddenStructure\">\n        <a href=\"http://127.0.0.1:8080/Plone/@@search\">Advanced
+        Search&#8230;</a>\n    </div>\n\n</div>\n\n\n\n\n\n\n\n</div>\n\n    </header>\n\n
+        \   <div id=\"portal-mainnavigation\">\n\n  <nav class=\"plone-navbar pat-navigationmarker\"
+        id=\"portal-globalnav-wrapper\">\n    <div class=\"container\">\n      <div
+        class=\"plone-navbar-header\">\n        <button type=\"button\" class=\"plone-navbar-toggle\"
+        data-toggle=\"collapse\" data-target=\"#portal-globalnav-collapse\">\n          <span
+        class=\"sr-only\">Toggle navigation</span>\n          <span class=\"icon-bar\"></span>\n
+        \         <span class=\"icon-bar\"></span>\n          <span class=\"icon-bar\"></span>\n
+        \       </button>\n      </div>\n\n      <div class=\"plone-collapse plone-navbar-collapse\"
+        id=\"portal-globalnav-collapse\">\n        <ul class=\"plone-nav plone-navbar-nav\"
+        id=\"portal-globalnav\">\n          <li class=\"index_html\"><a href=\"http://127.0.0.1:8080/Plone\"
+        class=\"state-None\">Home</a></li><li class=\"news\"><a href=\"http://127.0.0.1:8080/Plone/news\"
+        class=\"state-published\">News</a></li><li class=\"events\"><a href=\"http://127.0.0.1:8080/Plone/events\"
+        class=\"state-published\">Events</a></li><li class=\"Members\"><a href=\"http://127.0.0.1:8080/Plone/Members\"
+        class=\"state-private\">Users</a></li><li class=\"folder-iteration has_subtree\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration\" class=\"state-private\"
+        aria-haspopup=\"true\">Folder Iteration</a><input id=\"navitem-folder-iteration\"
+        type=\"checkbox\" class=\"opener\"><label for=\"navitem-folder-iteration\"
+        role=\"button\" aria-label=\"Folder Iteration\"></label><ul class=\"has_subtree
+        dropdown\"><li class=\"page-0-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-0-test\"
+        class=\"state-private\">Page 0 test.</a></li><li class=\"page-1-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-1-test\" class=\"state-private\">Page
+        1 test.</a></li><li class=\"page-2-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-2-test\"
+        class=\"state-private\">Page 2 test.</a></li><li class=\"page-3-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-3-test\" class=\"state-private\">Page
+        3 test.</a></li><li class=\"page-4-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-4-test\"
+        class=\"state-private\">Page 4 test.</a></li><li class=\"page-5-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-5-test\" class=\"state-private\">Page
+        5 test.</a></li><li class=\"page-6-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-6-test\"
+        class=\"state-private\">Page 6 test.</a></li><li class=\"page-7-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-7-test\" class=\"state-private\">Page
+        7 test.</a></li><li class=\"page-8-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-8-test\"
+        class=\"state-private\">Page 8 test.</a></li><li class=\"page-9-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-9-test\" class=\"state-private\">Page
+        9 test.</a></li><li class=\"page-10-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-10-test\"
+        class=\"state-private\">Page 10 test.</a></li><li class=\"page-11-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-11-test\" class=\"state-private\">Page
+        11 test.</a></li><li class=\"page-12-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-12-test\"
+        class=\"state-private\">Page 12 test.</a></li><li class=\"page-13-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-13-test\" class=\"state-private\">Page
+        13 test.</a></li><li class=\"page-14-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-14-test\"
+        class=\"state-private\">Page 14 test.</a></li><li class=\"page-15-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-15-test\" class=\"state-private\">Page
+        15 test.</a></li><li class=\"page-16-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-16-test\"
+        class=\"state-private\">Page 16 test.</a></li><li class=\"page-17-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-17-test\" class=\"state-private\">Page
+        17 test.</a></li><li class=\"page-18-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-18-test\"
+        class=\"state-private\">Page 18 test.</a></li><li class=\"page-19-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-19-test\" class=\"state-private\">Page
+        19 test.</a></li><li class=\"page-20-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-20-test\"
+        class=\"state-private\">Page 20 test.</a></li><li class=\"page-21-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-21-test\" class=\"state-private\">Page
+        21 test.</a></li><li class=\"page-22-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-22-test\"
+        class=\"state-private\">Page 22 test.</a></li><li class=\"page-23-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-23-test\" class=\"state-private\">Page
+        23 test.</a></li><li class=\"page-24-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-24-test\"
+        class=\"state-private\">Page 24 test.</a></li><li class=\"page-25-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-25-test\" class=\"state-private\">Page
+        25 test.</a></li><li class=\"page-26-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-26-test\"
+        class=\"state-private\">Page 26 test.</a></li><li class=\"page-27-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-27-test\" class=\"state-private\">Page
+        27 test.</a></li><li class=\"page-28-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-28-test\"
+        class=\"state-private\">Page 28 test.</a></li><li class=\"page-29-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-29-test\" class=\"state-private\">Page
+        29 test.</a></li><li class=\"page-30-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-30-test\"
+        class=\"state-private\">Page 30 test.</a></li><li class=\"page-31-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-31-test\" class=\"state-private\">Page
+        31 test.</a></li><li class=\"page-32-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-32-test\"
+        class=\"state-private\">Page 32 test.</a></li><li class=\"page-33-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-33-test\" class=\"state-private\">Page
+        33 test.</a></li><li class=\"page-34-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-34-test\"
+        class=\"state-private\">Page 34 test.</a></li><li class=\"page-35-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-35-test\" class=\"state-private\">Page
+        35 test.</a></li><li class=\"page-36-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-36-test\"
+        class=\"state-private\">Page 36 test.</a></li><li class=\"page-37-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-37-test\" class=\"state-private\">Page
+        37 test.</a></li><li class=\"page-38-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-38-test\"
+        class=\"state-private\">Page 38 test.</a></li><li class=\"page-39-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-39-test\" class=\"state-private\">Page
+        39 test.</a></li><li class=\"page-40-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-40-test\"
+        class=\"state-private\">Page 40 test.</a></li><li class=\"page-41-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-41-test\" class=\"state-private\">Page
+        41 test.</a></li><li class=\"page-42-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-42-test\"
+        class=\"state-private\">Page 42 test.</a></li><li class=\"page-43-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-43-test\" class=\"state-private\">Page
+        43 test.</a></li><li class=\"page-44-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-44-test\"
+        class=\"state-private\">Page 44 test.</a></li><li class=\"page-45-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-45-test\" class=\"state-private\">Page
+        45 test.</a></li><li class=\"page-46-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-46-test\"
+        class=\"state-private\">Page 46 test.</a></li><li class=\"page-47-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-47-test\" class=\"state-private\">Page
+        47 test.</a></li><li class=\"page-48-test\"><a href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-48-test\"
+        class=\"state-private\">Page 48 test.</a></li><li class=\"page-49-test\"><a
+        href=\"http://127.0.0.1:8080/Plone/folder-iteration/page-49-test\" class=\"state-private\">Page
+        49 test.</a></li></ul></li>\n        </ul>\n      </div>\n    </div>\n  </nav>\n\n\n</div>\n\n
+        \   <aside id=\"global_statusmessage\">\n      \n\n      <div>\n      </div>\n
+        \   </aside>\n\n    <div id=\"viewlet-above-content\"><nav id=\"portal-breadcrumbs\"
+        class=\"plone-breadcrumb\">\n  <div class=\"container\">\n    <span id=\"breadcrumbs-you-are-here\"
+        class=\"hiddenStructure\">You are here:</span>\n    <ol aria-labelledby=\"breadcrumbs-you-are-here\">\n
+        \     <li id=\"breadcrumbs-home\">\n        <a href=\"http://127.0.0.1:8080/Plone\">Home</a>\n
+        \     </li>\n      \n    </ol>\n  </div>\n</nav>\n</div>\n\n    <article id=\"portal-column-content\">\n\n
+        \     \n        \n          \n\n            <div>\n\n\n        \n\n        <article
+        id=\"content\">\n\n          \n                \n\n    <a id=\"setup-link\"
+        class=\"link-parent\" href=\"http://127.0.0.1:8080/Plone/@@overview-controlpanel\">Site
+        Setup</a>\n\n    <h1 class=\"documentFirstHeading\">Add-ons</h1>\n\n    <div
+        class=\"documentDescription\">This is the Add-on configuration section, you
+        can activate and deactivate add-ons in the lists below.</div>\n\n    <div
+        id=\"content-core\">\n\n        <p class=\"discreet\">To make new add-ons
+        show up here, add them to your buildout configuration, run buildout, and restart
+        the server process. For detailed instructions see <span>\n          <a href=\"http://docs.plone.org/manage/installing/installing_addons.html\">Installing
+        a third party add-on</a>\n          </span>.</p>\n\n        <section id=\"upgrade-products\"
+        class=\"portlet\">\n          <header class=\"portletHeader\">Upgrades</header>\n
+        \         <section class=\"portletContent\">\n            <div id=\"up-to-date-message\"
+        class=\"portalMessage info\" role=\"status\">\n                 <strong>No
+        upgrades in this corner</strong>\n                 <span>You are up to date.
+        High fives.</span>\n             </div>\n          </section>\n          \n
+        \       </section>\n\n        <section id=\"install-products\" class=\"portlet\">\n
+        \         <header class=\"portletHeader\">Available add-ons</header>\n          <section
+        class=\"portletContent\">\n            <ul class=\"configlets\">\n              <li>\n
+        \             \n                <form action=\"install_products\" method=\"post\"
+        class=\"pull-right\">\n                   <input type=\"hidden\" name=\"install_product\"
+        value=\"Products.CMFPlacefulWorkflow\">\n                   <input class=\"context\"
+        type=\"submit\" value=\"Install\" name=\"form.submitted\">\n                <input
+        name=\"_authenticator\" type=\"hidden\" value=\"9190d45190194178526ee3921b877205bea6c147\"></form>\n\n
+        \               <h3>\n                  Workflow Policy Support (CMFPlacefulWorkflow)\n
+        \               </h3>\n                <p class=\"configletDescription discreet\">\n
+        \                 Add in Plone the capability to change workflow chains for
+        types in every object. Includes a dependency on core Plone types.\n                  <em
+        class=\"discreet\"> &#8211; (Products.CMFPlacefulWorkflow 2.0.4)</em>\n                </p>\n
+        \               \n              \n              </li>\n              <li>\n
+        \             \n                <form action=\"install_products\" method=\"post\"
+        class=\"pull-right\">\n                   <input type=\"hidden\" name=\"install_product\"
+        value=\"pas.plugins.ldap.plonecontrolpanel\">\n                   <input class=\"context\"
+        type=\"submit\" value=\"Install\" name=\"form.submitted\">\n                <input
+        name=\"_authenticator\" type=\"hidden\" value=\"9190d45190194178526ee3921b877205bea6c147\"></form>\n\n
+        \               <h3>\n                  LDAP/ Active Directory Support\n                </h3>\n
+        \               <p class=\"configletDescription discreet\">\n                  pas.plugins.ldap
+        support for users and groups from ldap/active directory.\n                  <em
+        class=\"discreet\"> &#8211; (pas.plugins.ldap.plonecontrolpanel )</em>\n                </p>\n
+        \               <dl class=\"portalMessage warning\" role=\"status\">\n                  <dt>Warning</dt>\n
+        \                 <dd>This product cannot be uninstalled!</dd>\n                </dl>\n
+        \             \n              </li>\n              <li>\n              \n
+        \               <form action=\"install_products\" method=\"post\" class=\"pull-right\">\n
+        \                  <input type=\"hidden\" name=\"install_product\" value=\"plone.app.iterate\">\n
+        \                  <input class=\"context\" type=\"submit\" value=\"Install\"
+        name=\"form.submitted\">\n                <input name=\"_authenticator\" type=\"hidden\"
+        value=\"9190d45190194178526ee3921b877205bea6c147\"></form>\n\n                <h3>\n
+        \                 Working Copy Support (Iterate)\n                </h3>\n
+        \               <p class=\"configletDescription discreet\">\n                  Adds
+        working copy support (aka. in-place staging) to Plone.\n                  <em
+        class=\"discreet\"> &#8211; (plone.app.iterate 3.3.15)</em>\n                </p>\n
+        \               \n              \n              </li>\n              <li>\n
+        \             \n                <form action=\"install_products\" method=\"post\"
+        class=\"pull-right\">\n                   <input type=\"hidden\" name=\"install_product\"
+        value=\"plone.app.multilingual\">\n                   <input class=\"context\"
+        type=\"submit\" value=\"Install\" name=\"form.submitted\">\n                <input
+        name=\"_authenticator\" type=\"hidden\" value=\"9190d45190194178526ee3921b877205bea6c147\"></form>\n\n
+        \               <h3>\n                  Multilingual Support\n                </h3>\n
+        \               <p class=\"configletDescription discreet\">\n                  Install
+        to enable multilingual content support with plone.app.multilingual\n                  <em
+        class=\"discreet\"> &#8211; (plone.app.multilingual 5.6.3)</em>\n                </p>\n
+        \               \n              \n              </li>\n              <li>\n
+        \             \n                <form action=\"install_products\" method=\"post\"
+        class=\"pull-right\">\n                   <input type=\"hidden\" name=\"install_product\"
+        value=\"plone.session\">\n                   <input class=\"context\" type=\"submit\"
+        value=\"Install\" name=\"form.submitted\">\n                <input name=\"_authenticator\"
+        type=\"hidden\" value=\"9190d45190194178526ee3921b877205bea6c147\"></form>\n\n
+        \               <h3>\n                  Session refresh support\n                </h3>\n
+        \               <p class=\"configletDescription discreet\">\n                  Optional
+        plone.session refresh support.\n                  <em class=\"discreet\">
+        &#8211; (plone.session 3.7.5)</em>\n                </p>\n                \n
+        \             \n              </li>\n              <li>\n              \n
+        \               <form action=\"install_products\" method=\"post\" class=\"pull-right\">\n
+        \                  <input type=\"hidden\" name=\"install_product\" value=\"yafowil.plone\">\n
+        \                  <input class=\"context\" type=\"submit\" value=\"Install\"
+        name=\"form.submitted\">\n                <input name=\"_authenticator\" type=\"hidden\"
+        value=\"9190d45190194178526ee3921b877205bea6c147\"></form>\n\n                <h3>\n
+        \                 YAFOWIL Form Library\n                </h3>\n                <p
+        class=\"configletDescription discreet\">\n                  YYet Another Form
+        Widget Library - Basic Integration for Plone.\n                  <em class=\"discreet\">
+        &#8211; (yafowil.plone 4.0.0a3)</em>\n                </p>\n                <dl
+        class=\"portalMessage warning\" role=\"status\">\n                  <dt>Warning</dt>\n
+        \                 <dd>This product cannot be uninstalled!</dd>\n                </dl>\n
+        \             \n              </li>\n            </ul>\n          </section>\n
+        \       </section>\n\n        <section id=\"activated-products\" class=\"portlet\">\n
+        \         <header class=\"portletHeader\">Activated add-ons</header>\n          <section
+        class=\"portletContent\">\n            <ul class=\"configlets\">\n                <li>\n
+        \               \n                  <form action=\"uninstall_products\" method=\"post\"
+        class=\"pull-right\">\n                    <input type=\"hidden\" name=\"uninstall_product\"
+        value=\"plone.restapi\">\n                    <input class=\"destructive\"
+        type=\"submit\" value=\"Uninstall\" name=\"form.submitted\">\n                  <input
+        name=\"_authenticator\" type=\"hidden\" value=\"9190d45190194178526ee3921b877205bea6c147\"></form>\n
+        \                   <h3>\n                      plone.restapi\n                    </h3>\n
+        \                   <p class=\"configletDescription discreet\">\n                      RESTful
+        hypermedia API for Plone.\n                      <em class=\"discreet\"> &#8211;
+        (plone.restapi 7.0.0)</em>\n                    </p>\n                    \n
+        \               \n                </li>\n              </ul>\n          </section>\n
+        \       </section>\n\n        \n\n    </div>\n\n              \n        </article>\n\n
+        \       \n\n<!--                 <metal:sub define-slot=\"sub\" tal:content=\"nothing\">\n
+        \                  This slot is here for backwards compatibility only.\n                   Don't
+        use it in your custom templates.\n                </metal:sub> -->\n      </div>\n\n
+        \         \n        \n    \n      <footer>\n        <div id=\"viewlet-below-content\">\n</div>\n
+        \     </footer>\n    </article>\n\n\n\n    \n\n    <aside id=\"portal-column-two\">\n
+        \     \n        \n            \n\n<section class=\"portlet portletNavigationTree
+        portletSiteSetup\" role=\"section\" id=\"portlet-prefs\">\n  <header class=\"portletHeader\">\n
+        \       <a href=\"http://127.0.0.1:8080/Plone/@@overview-controlpanel\">Site
+        Setup</a>\n  </header>\n\n  <nav class=\"portletContent\">\n    <ul class=\"configlets\">\n
+        \     <li>\n\n          \n              <strong>General</strong>\n              <ul
+        class=\"configlets\">\n                  \n                  <li>\n                      <a
+        href=\"http://127.0.0.1:8080/Plone/@@actions-controlpanel\">\n                      Actions\n
+        \                     </a>\n                  </li>\n                  \n
+        \                 <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/prefs_install_products_form\">\n
+        \                     Add-ons\n                      </a>\n                  </li>\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@dateandtime-controlpanel\">\n
+        \                     Date and Time\n                      </a>\n                  </li>\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@discussion-controlpanel\">\n
+        \                     Discussion\n                      </a>\n                  </li>\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@language-controlpanel\">\n
+        \                     Language\n                      </a>\n                  </li>\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@mail-controlpanel\">\n
+        \                     Mail\n                      </a>\n                  </li>\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@navigation-controlpanel\">\n
+        \                     Navigation\n                      </a>\n                  </li>\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@search-controlpanel\">\n
+        \                     Search\n                      </a>\n                  </li>\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@site-controlpanel\">\n
+        \                     Site\n                      </a>\n                  </li>\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@social-controlpanel\">\n
+        \                     Social Media\n                      </a>\n                  </li>\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@syndication-controlpanel\">\n
+        \                     Syndication\n                      </a>\n                  </li>\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@theming-controlpanel\">\n
+        \                     Theming\n                      </a>\n                  </li>\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@tinymce-controlpanel\">\n
+        \                     TinyMCE\n                      </a>\n                  </li>\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@redirection-controlpanel\">\n
+        \                     URL Management\n                      </a>\n                  </li>\n
+        \                 \n              </ul>\n          \n      \n\n          \n
+        \             <strong>Content</strong>\n              <ul class=\"configlets\">\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@rules-controlpanel\">\n
+        \                     Content Rules\n                      </a>\n                  </li>\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@content-controlpanel\">\n
+        \                     Content Settings\n                      </a>\n                  </li>\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@dexterity-types\">\n
+        \                     Dexterity Content Types\n                      </a>\n
+        \                 </li>\n                  \n                  <li>\n                      <a
+        href=\"http://127.0.0.1:8080/Plone/@@editing-controlpanel\">\n                      Editing\n
+        \                     </a>\n                  </li>\n                  \n
+        \                 <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@imaging-controlpanel\">\n
+        \                     Image Handling\n                      </a>\n                  </li>\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@markup-controlpanel\">\n
+        \                     Markup\n                      </a>\n                  </li>\n
+        \                 \n              </ul>\n          \n      \n\n          \n
+        \             <strong>Users</strong>\n              <ul class=\"configlets\">\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@usergroup-userprefs\">\n
+        \                     Users and Groups\n                      </a>\n                  </li>\n
+        \                 \n              </ul>\n          \n      \n\n          \n
+        \             <strong>Security</strong>\n              <ul class=\"configlets\">\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/prefs_error_log_form\">\n
+        \                     Errors\n                      </a>\n                  </li>\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@filter-controlpanel\">\n
+        \                     HTML Filtering\n                      </a>\n                  </li>\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@security-controlpanel\">\n
+        \                     Security\n                      </a>\n                  </li>\n
+        \                 \n              </ul>\n          \n      \n\n          \n
+        \             <strong>Advanced</strong>\n              <ul class=\"configlets\">\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@caching-controlpanel\">\n
+        \                     Caching\n                      </a>\n                  </li>\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/portal_registry\">\n
+        \                     Configuration Registry\n                      </a>\n
+        \                 </li>\n                  \n                  <li>\n                      <a
+        href=\"http://127.0.0.1:8080/Plone/@@maintenance-controlpanel\">\n                      Maintenance\n
+        \                     </a>\n                  </li>\n                  \n
+        \                 <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/manage_main\">\n
+        \                     Management Interface\n                      </a>\n                  </li>\n
+        \                 \n                  <li>\n                      <a href=\"http://127.0.0.1:8080/Plone/@@resourceregistry-controlpanel\">\n
+        \                     Resource Registries\n                      </a>\n                  </li>\n
+        \                 \n              </ul>\n          \n      \n\n          \n
+        \     \n\n          \n      </li>\n    </ul>\n  </nav>\n\n</section>\n\n\n
+        \       \n    \n    </aside>\n\n    <footer id=\"portal-footer-wrapper\">\n
+        \     <div class=\"row\">\n\t<div class=\"col-xs-12\">\n\t\t\n<div class=\"portletWrapper\"
+        id=\"portletwrapper-706c6f6e652e666f6f746572706f72746c6574730a636f6e746578740a2f506c6f6e650a666f6f746572\"
+        data-portlethash=\"706c6f6e652e666f6f746572706f72746c6574730a636f6e746578740a2f506c6f6e650a666f6f746572\">\n\n
+        \ \n\n  \n    \n\n  <aside class=\"portlet portletClassic\" id=\"portal-footer-signature\">\n
+        \   <div class=\"portletContent\">\n      The \n           <a href=\"http://plone.com\">Plone<sup>&#174;</sup>
+        Open Source CMS/WCM</a>\n       is <abbr title=\"Copyright\">&#169;</abbr>
+        2000-2021 by the \n           <a href=\"http://plone.org/foundation\">Plone
+        Foundation</a> and friends.\n\n      Distributed under the \n                <a
+        href=\"http://creativecommons.org/licenses/GPL/2.0/\">GNU GPL license</a>.\n
+        \   </div>\n  </aside>\n\n\n  \n\n</div>\n\n<div class=\"portletWrapper\"
+        id=\"portletwrapper-706c6f6e652e666f6f746572706f72746c6574730a636f6e746578740a2f506c6f6e650a616374696f6e73\"
+        data-portlethash=\"706c6f6e652e666f6f746572706f72746c6574730a636f6e746578740a2f506c6f6e650a616374696f6e73\">\n\n<aside
+        class=\"portlet portletActions\">\n\n  \n  <div class=\"portletContent\">\n
+        \   <ul class=\"actions-site_actions\">\n      \n        <li class=\"portletItem\">\n
+        \         <a href=\"http://127.0.0.1:8080/Plone/sitemap\">\n\n            <span>Site
+        Map</span>\n\n            \n\n          </a>\n        </li>\n      \n        <li
+        class=\"portletItem\">\n          <a href=\"http://127.0.0.1:8080/Plone/accessibility-info\">\n\n
+        \           <span>Accessibility</span>\n\n            \n\n          </a>\n
+        \       </li>\n      \n        <li class=\"portletItem\">\n          <a href=\"http://127.0.0.1:8080/Plone/contact-info\"
+        class=\"pat-plone-modal\" data-pat-plone-modal=\"{}\">\n\n            <span>Contact</span>\n\n
+        \           \n\n          </a>\n        </li>\n      \n    </ul>\n  </div>\n</aside>\n\n</div>\n\n<div
+        class=\"portletWrapper\" id=\"portletwrapper-706c6f6e652e666f6f746572706f72746c6574730a636f6e746578740a2f506c6f6e650a636f6c6f70686f6e\"
+        data-portlethash=\"706c6f6e652e666f6f746572706f72746c6574730a636f6e746578740a2f506c6f6e650a636f6c6f70686f6e\">\n\n
+        \ \n\n  \n    \n\n  <aside class=\"portlet portletClassic\" id=\"portal-colophon\">\n
+        \   <div class=\"portletContent\">\n      <a href=\"http://plone.com\" target=\"_blank\"
+        title=\"This site was built using the Plone Open Source CMS/WCM.\">Powered
+        by Plone &amp; Python</a>\n    </div>\n  </aside>\n\n\n  \n\n</div>\n\n\n\t</div>\n</div>\n\n\n\n
+        \   </footer>\n\n  <script type=\"application/javascript\" src=\"http://127.0.0.1:8080/Plone/++resource++protect.js\"
+        data-site-url=\"http://127.0.0.1:8080/Plone\" data-token=\"9190d45190194178526ee3921b877205bea6c147\"
+        id=\"protect-script\"></script></body>\n</html>"
+    headers:
+      Content-Language:
+      - en
+      Content-Length:
+      - '33419'
+      Content-Type:
+      - text/html;charset=utf-8
+      Date:
+      - Fri, 30 Jul 2021 01:16:09 GMT
+      Expires:
+      - Sat, 1 Jan 2000 00:00:00 GMT
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 200
+      message: OK
+version: 1

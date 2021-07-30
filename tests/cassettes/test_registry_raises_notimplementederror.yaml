@@ -1,0 +1,55 @@
+interactions:
+- request:
+    body: '{"nuskool": "The new oldskool"}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '31'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: PATCH
+    uri: http://127.0.0.1:8080/Plone/@registry
+  response:
+    body:
+      string: "{\n  \"message\": \"This endpoint is only intended to update existing
+        records! Couldn't find key 'nuskool'\",\n  \"traceback\": [\n    \"File \\\"/plone/buildout-cache/eggs/cp38/Zope-4.5.5-py3.8.egg/ZPublisher/WSGIPublisher.py\\\",
+        line 162, in transaction_pubevents\",\n    \"    yield\",\n    \"\",\n    \"
+        \ File \\\"/plone/buildout-cache/eggs/cp38/Zope-4.5.5-py3.8.egg/ZPublisher/WSGIPublisher.py\\\",
+        line 371, in publish_module\",\n    \"    response = _publish(request, new_mod_info)\",\n
+        \   \"\",\n    \"  File \\\"/plone/buildout-cache/eggs/cp38/Zope-4.5.5-py3.8.egg/ZPublisher/WSGIPublisher.py\\\",
+        line 266, in publish\",\n    \"    result = mapply(obj,\",\n    \"\",\n    \"
+        \ File \\\"/plone/buildout-cache/eggs/cp38/Zope-4.5.5-py3.8.egg/ZPublisher/mapply.py\\\",
+        line 85, in mapply\",\n    \"    return debug(object, args, context)\",\n
+        \   \"\",\n    \"  File \\\"/plone/buildout-cache/eggs/cp38/Zope-4.5.5-py3.8.egg/ZPublisher/WSGIPublisher.py\\\",
+        line 63, in call_object\",\n    \"    return obj(*args)\",\n    \"\",\n    \"
+        \ File \\\"/plone/buildout-cache/eggs/cp38/plone.rest-1.6.2-py3.8.egg/plone/rest/service.py\\\",
+        line 22, in __call__\",\n    \"    return self.render()\",\n    \"\",\n    \"
+        \ File \\\"/plone/buildout-cache/eggs/cp38/plone.restapi-7.0.0-py3.8.egg/plone/restapi/services/__init__.py\\\",
+        line 20, in render\",\n    \"    content = self.reply()\",\n    \"\",\n    \"
+        \ File \\\"/plone/buildout-cache/eggs/cp38/plone.restapi-7.0.0-py3.8.egg/plone/restapi/services/registry/update.py\\\",
+        line 22, in reply\",\n    \"    raise NotImplementedError(\"\n  ],\n  \"type\":
+        \"NotImplementedError\"\n}"
+    headers:
+      Content-Length:
+      - '1513'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 15:00:14 GMT
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 500
+      message: Internal Server Error
+version: 1

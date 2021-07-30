@@ -1,0 +1,51 @@
+[project]
+name = "plone-restapi-client"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Chris Wesseling", email = "Chris.Wesseling@cwi.nl"},
+]
+dependencies = [
+    "requests~=2.26",
+]
+requires-python = ">=3.7"
+dynamic = ["classifiers"]
+license = {text = "MPL-2.0"}
+
+[project.urls]
+homepage = ""
+
+[project.optional-dependencies]
+[build-system]
+requires = ["pdm-pep517"]
+build-backend = "pdm.pep517.api"
+
+[tool]
+
+[tool.black]
+line-length = 79
+
+[tool.coverage]
+[tool.coverage.run]
+source = ["plone_restapi_client"]
+[tool.coverage.report]
+exclude_lines = [
+    ".raise_for_status()",
+]
+
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "black~=21.7b0",
+    "pre-commit~=2.13",
+    "mypy~=0.910",
+    "pytest~=6.2",
+    "hypothesis~=6.14",
+    "types-requests~=2.25",
+    "pytest-vcr~=1.0",
+    "pytest-cov~=2.12"]
+[tool.pdm.scripts]
+docker = "tests/conftest.py"
+test = "pytest --vcr-record=none"
+lint = "pre-commit run --all-files"
+

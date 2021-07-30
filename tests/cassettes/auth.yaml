@@ -1,0 +1,40 @@
+interactions:
+- request:
+    body: '{"login": "admin", "password": "admin"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '39'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/@login
+  response:
+    body:
+      string: "{\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTYyNzY1MDk2MywiZnVsbG5hbWUiOm51bGx9.f_b-R4ufScMPiY62XZo5gBCZpQn7EPNeILYzXXVHdpE\"\n}"
+    headers:
+      Content-Length:
+      - '162'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:03 GMT
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 200
+      message: OK
+version: 1

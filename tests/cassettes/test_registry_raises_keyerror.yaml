@@ -1,0 +1,55 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: GET
+    uri: http://127.0.0.1:8080/Plone/@registry/plone-restapi-client-testkey
+  response:
+    body:
+      string: "{\n  \"message\": \"'plone-restapi-client-testkey'\",\n  \"traceback\":
+        [\n    \"File \\\"/plone/buildout-cache/eggs/cp38/Zope-4.5.5-py3.8.egg/ZPublisher/WSGIPublisher.py\\\",
+        line 162, in transaction_pubevents\",\n    \"    yield\",\n    \"\",\n    \"
+        \ File \\\"/plone/buildout-cache/eggs/cp38/Zope-4.5.5-py3.8.egg/ZPublisher/WSGIPublisher.py\\\",
+        line 371, in publish_module\",\n    \"    response = _publish(request, new_mod_info)\",\n
+        \   \"\",\n    \"  File \\\"/plone/buildout-cache/eggs/cp38/Zope-4.5.5-py3.8.egg/ZPublisher/WSGIPublisher.py\\\",
+        line 266, in publish\",\n    \"    result = mapply(obj,\",\n    \"\",\n    \"
+        \ File \\\"/plone/buildout-cache/eggs/cp38/Zope-4.5.5-py3.8.egg/ZPublisher/mapply.py\\\",
+        line 85, in mapply\",\n    \"    return debug(object, args, context)\",\n
+        \   \"\",\n    \"  File \\\"/plone/buildout-cache/eggs/cp38/Zope-4.5.5-py3.8.egg/ZPublisher/WSGIPublisher.py\\\",
+        line 63, in call_object\",\n    \"    return obj(*args)\",\n    \"\",\n    \"
+        \ File \\\"/plone/buildout-cache/eggs/cp38/plone.rest-1.6.2-py3.8.egg/plone/rest/service.py\\\",
+        line 22, in __call__\",\n    \"    return self.render()\",\n    \"\",\n    \"
+        \ File \\\"/plone/buildout-cache/eggs/cp38/plone.restapi-7.0.0-py3.8.egg/plone/restapi/services/__init__.py\\\",
+        line 20, in render\",\n    \"    content = self.reply()\",\n    \"\",\n    \"
+        \ File \\\"/plone/buildout-cache/eggs/cp38/plone.restapi-7.0.0-py3.8.egg/plone/restapi/services/registry/get.py\\\",
+        line 35, in reply\",\n    \"    value = registry[self._get_record_name]\",\n
+        \   \"\",\n    \"  File \\\"/plone/buildout-cache/eggs/cp38/plone.registry-1.1.6-py3.8.egg/plone/registry/registry.py\\\",
+        line 42, in __getitem__\",\n    \"    return self.records._values[name]\"\n
+        \ ],\n  \"type\": \"KeyError\"\n}"
+    headers:
+      Content-Length:
+      - '1642'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:09 GMT
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 503
+      message: Service Unavailable
+version: 1

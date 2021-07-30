@@ -1,0 +1,65 @@
+interactions:
+- request:
+    body: '{"plone.allow_anon_views_about": "Should be bool"}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '50'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: PATCH
+    uri: http://127.0.0.1:8080/Plone/@registry
+  response:
+    body:
+      string: "{\n  \"message\": \"('Should be bool', <class 'bool'>, 'value')\",\n
+        \ \"traceback\": [\n    \"File \\\"/plone/buildout-cache/eggs/cp38/Zope-4.5.5-py3.8.egg/ZPublisher/WSGIPublisher.py\\\",
+        line 162, in transaction_pubevents\",\n    \"    yield\",\n    \"\",\n    \"
+        \ File \\\"/plone/buildout-cache/eggs/cp38/Zope-4.5.5-py3.8.egg/ZPublisher/WSGIPublisher.py\\\",
+        line 371, in publish_module\",\n    \"    response = _publish(request, new_mod_info)\",\n
+        \   \"\",\n    \"  File \\\"/plone/buildout-cache/eggs/cp38/Zope-4.5.5-py3.8.egg/ZPublisher/WSGIPublisher.py\\\",
+        line 266, in publish\",\n    \"    result = mapply(obj,\",\n    \"\",\n    \"
+        \ File \\\"/plone/buildout-cache/eggs/cp38/Zope-4.5.5-py3.8.egg/ZPublisher/mapply.py\\\",
+        line 85, in mapply\",\n    \"    return debug(object, args, context)\",\n
+        \   \"\",\n    \"  File \\\"/plone/buildout-cache/eggs/cp38/Zope-4.5.5-py3.8.egg/ZPublisher/WSGIPublisher.py\\\",
+        line 63, in call_object\",\n    \"    return obj(*args)\",\n    \"\",\n    \"
+        \ File \\\"/plone/buildout-cache/eggs/cp38/plone.rest-1.6.2-py3.8.egg/plone/rest/service.py\\\",
+        line 22, in __call__\",\n    \"    return self.render()\",\n    \"\",\n    \"
+        \ File \\\"/plone/buildout-cache/eggs/cp38/plone.restapi-7.0.0-py3.8.egg/plone/restapi/services/__init__.py\\\",
+        line 20, in render\",\n    \"    content = self.reply()\",\n    \"\",\n    \"
+        \ File \\\"/plone/buildout-cache/eggs/cp38/plone.restapi-7.0.0-py3.8.egg/plone/restapi/services/registry/update.py\\\",
+        line 26, in reply\",\n    \"    registry[key] = value\",\n    \"\",\n    \"
+        \ File \\\"/plone/buildout-cache/eggs/cp38/plone.registry-1.1.6-py3.8.egg/plone/registry/registry.py\\\",
+        line 51, in __setitem__\",\n    \"    self.records[name].value = value\",\n
+        \   \"\",\n    \"  File \\\"/plone/buildout-cache/eggs/cp38/plone.registry-1.1.6-py3.8.egg/plone/registry/record.py\\\",
+        line 82, in _set_value\",\n    \"    field.validate(value)\",\n    \"\",\n
+        \   \"  File \\\"/plone/buildout-cache/eggs/cp38/zope.schema-6.0.0-py3.8.egg/zope/schema/_bootstrapfields.py\\\",
+        line 292, in validate\",\n    \"    self._validate(value)\",\n    \"\",\n
+        \   \"  File \\\"/plone/buildout-cache/eggs/cp38/zope.schema-6.0.0-py3.8.egg/zope/schema/_bootstrapfields.py\\\",
+        line 596, in _validate\",\n    \"    Field._validate(self, value)\",\n    \"\",\n
+        \   \"  File \\\"/plone/buildout-cache/eggs/cp38/zope.schema-6.0.0-py3.8.egg/zope/schema/_bootstrapfields.py\\\",
+        line 338, in _validate\",\n    \"    raise WrongType(value, self._type, self.__name__).with_field_and_value(self,
+        value)\"\n  ],\n  \"type\": \"WrongType\"\n}"
+    headers:
+      Content-Length:
+      - '2404'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:09 GMT
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 500
+      message: Internal Server Error
+version: 1

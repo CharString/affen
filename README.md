@@ -44,7 +44,8 @@ And then follow the [batching](https://plonerestapi.readthedocs.io/en/latest/bat
 (and remember to start `enumerate` at the right number)
 
 ```python
->>> response = requests.get(response.json()['batching']['next'], headers={'Accept': 'application/json'}, auth=2*('admin',))
+>>> response = requests.get(response.json()['batching']['next'],
+... headers={'Accept': 'application/json'}, auth=2*('admin',))
 >>> for i, item in enumerate(response.json()['items'], start=i + 1):
 ...     print(i, item['@id'])
 ...
@@ -94,7 +95,7 @@ batching protocol; like Folders, Collectors and restapi endpoints like
 >>>
 ```
 
-## Registry
+## Wrangling the Registry
 
 And if you have the permissions, you can read and write to the registry as if it were a dictionary:
 
@@ -117,26 +118,29 @@ And if you have the permissions, you can read and write to the registry as if it
 ## But my requests.Session does almost the same!
 
 ```python
->>> naive = requests.Session()
->>> naive.auth = ('admin', 'admin')
->>> naive.headers['accept'] = 'application/json'
->>> # these two lines make it almost as short as affen...
->>> [t['title'] for t in naive.get('http://127.0.0.1:8080/Plone/@types').json()]
+>>> vanilla = requests.Session()
+>>> vanilla.auth = ('admin', 'admin')
+>>> vanilla.headers['accept'] = 'application/json'
+>>> ROOT = 'http://127.0.0.1:8080/Plone'
+>>> # these two lines make it almost as short as Affen...
+>>> [t['title'] for t in vanilla.get(f'{ROOT}/@types').json()]
 ['Collection', 'Event', 'File', 'Folder', 'Image', 'Link', 'News Item', 'Page']
->>> # see?
+>>> # see? f-strings were such a great idea!
+>>> # Affen is hardly shorter
 >>> [t['title'] for t in plone.get('@types').json()]
 ['Collection', 'Event', 'File', 'Folder', 'Image', 'Link', 'News Item', 'Page']
-
+>>>
 ```
 
-Sure, until you accidentally use the session to for requests outside the
-api_root, because it's so convienently close, and seems to behave like
-requests.get
+Sure, until you accidentally reuse the session for requests to a different
+host. It's so conveniently close, and seems to behave like `requests.get`. So
+your mypy powered IDE didn't catch it. In fact, it provided handy
+autocompletion, so it looked like the Right Thing™.
 
 ```python
->>> naive.get('https://httpbin.org/headers').json()['headers']['Authorization']
+>>> vanilla.get('https://httpbin.org/headers').json()['headers']['Authorization']
 'Basic YWRtaW46YWRtaW4='
-
+>>>
 ```
 
 OOPS, did we just send our 'Authorization' header to the nice people of httpbin.org?

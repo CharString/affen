@@ -112,8 +112,9 @@ def test_wrong_credentials():
 
 @pytest.mark.vcr
 def test_does_not_leak_authentication(plone):
-    with pytest.raises(ValueError):
+    with pytest.raises(ValueError) as info:
         response = plone.get("https://httpbin.org/headers")
+    assert "http://127.0.0.1:8080/Plone" in str(info.value)
 
 
 @pytest.fixture(scope="module")

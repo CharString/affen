@@ -79,7 +79,7 @@ class Session(requests.Session):
         url = urljoin(self.root, url)
         if not url.startswith(self.root):
             raise ValueError(
-                "Making requests to other hosts than {self.root} may leak credentials. "
+                f"Making requests to other hosts than {self.root} may leak credentials. "
                 "Use a different requests.Session for those or change root"
             )
         return super().request(method, url, *args, **kwargs)

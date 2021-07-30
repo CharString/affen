@@ -16,6 +16,6 @@ repos:
     name: pytest
     stages: [commit]
     language: system
-    entry: pdm run pytest --vcr-record=none #--cov --cov-fail-under=100 
+    entry: pdm run pytest --vcr-record=none --cov --cov-fail-under=100
     pass_filenames: false
     types: [python]

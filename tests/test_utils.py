@@ -29,6 +29,13 @@ def test_registry_implements_len(plone):
 
 
 @pytest.mark.vcr
+def test_registry_implements_iteration(plone):
+    for key in plone.registry:
+        assert key
+        break  # datetime values still throw a 500 error
+
+
+@pytest.mark.vcr
 def test_editing_registry(plone):
     plone.registry["plone.allow_anon_views_about"] = True
     assert plone.registry["plone.allow_anon_views_about"] == True

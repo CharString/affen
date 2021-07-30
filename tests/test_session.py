@@ -70,7 +70,9 @@ def test_iterating_over_foler(plone):
 
     page_titles = [p["title"] for p in plone.items(folder_url)]
     assert set(page_titles) == set([f"Page {i} test." for i in range(50)])
-    assert len(plone.items(folder_url)) == 50
+    iterator = plone.items(folder_url)
+    assert len(iterator) == 50
+    assert "folder-iteration" in repr(iterator)
 
 
 def test_missing_restapi(vcr):

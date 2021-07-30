@@ -1,0 +1,236 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: GET
+    uri: http://127.0.0.1:8080/Plone/@registry
+  response:
+    body:
+      string: "{\n  \"@id\": \"http://127.0.0.1:8080/Plone/@registry\", \n  \"batching\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/@registry\", \n    \"first\":
+        \"http://127.0.0.1:8080/Plone/@registry?b_start=0\", \n    \"last\": \"http://127.0.0.1:8080/Plone/@registry?b_start=1800\",
+        \n    \"next\": \"http://127.0.0.1:8080/Plone/@registry?b_start=25\"\n  },
+        \n  \"items\": [\n    {\n      \"name\": \"Products.CMFPlone.i18nl10n.override_dateformat.Enabled\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"description\":
+        \"Override the translation machinery\", \n          \"factory\": \"Yes/No\",
+        \n          \"title\": \"Enabled\", \n          \"type\": \"boolean\"\n        }\n
+        \     }, \n      \"value\": false\n    }, \n    {\n      \"name\": \"Products.CMFPlone.i18nl10n.override_dateformat.date_format_long\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"description\":
+        \"Default value: %Y-%m-%d %H:%M (2038-01-19 03:14)\", \n          \"factory\":
+        \"Text line (String)\", \n          \"title\": \"old ZMI property: localLongTimeFormat\",
+        \n          \"type\": \"string\"\n        }\n      }, \n      \"value\": \"%Y-%m-%d
+        %H:%M\"\n    }, \n    {\n      \"name\": \"Products.CMFPlone.i18nl10n.override_dateformat.date_format_short\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"description\":
+        \"Default value: %Y-%m-%d (2038-01-19)\", \n          \"factory\": \"Text
+        line (String)\", \n          \"title\": \"old ZMI property: localTimeFormat\",
+        \n          \"type\": \"string\"\n        }\n      }, \n      \"value\": \"%Y-%m-%d\"\n
+        \   }, \n    {\n      \"name\": \"Products.CMFPlone.i18nl10n.override_dateformat.time_format\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"description\":
+        \"Default value: %H:%M (03:14)\", \n          \"factory\": \"Text line (String)\",
+        \n          \"title\": \"old ZMI property: localTimeOnlyFormat\", \n          \"type\":
+        \"string\"\n        }\n      }, \n      \"value\": \"%H:%M\"\n    }, \n    {\n
+        \     \"name\": \"Products.CMFPlone.interfaces.syndication.ISiteSyndicationSettings.allowed\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"default\": true,
+        \n          \"description\": \"Allow syndication for collections and folders
+        on site.\", \n          \"factory\": \"Yes/No\", \n          \"title\": \"Allowed\",
+        \n          \"type\": \"boolean\"\n        }\n      }, \n      \"value\":
+        true\n    }, \n    {\n      \"name\": \"Products.CMFPlone.interfaces.syndication.ISiteSyndicationSettings.allowed_feed_types\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"additionalItems\":
+        true, \n          \"default\": [\n            \"RSS|RSS 1.0\", \n            \"rss.xml|RSS
+        2.0\", \n            \"atom.xml|Atom\", \n            \"itunes.xml|iTunes\"\n
+        \         ], \n          \"description\": \"Separate view name and title by
+        '|'\", \n          \"factory\": \"Tuple\", \n          \"items\": {\n            \"description\":
+        \"\", \n            \"factory\": \"Text line (String)\", \n            \"title\":
+        \"\", \n            \"type\": \"string\"\n          }, \n          \"title\":
+        \"Allowed Feed Types\", \n          \"type\": \"array\", \n          \"uniqueItems\":
+        true\n        }\n      }, \n      \"value\": [\n        \"RSS|RSS 1.0\", \n
+        \       \"rss.xml|RSS 2.0\", \n        \"atom.xml|Atom\", \n        \"itunes.xml|iTunes\"\n
+        \     ]\n    }, \n    {\n      \"name\": \"Products.CMFPlone.interfaces.syndication.ISiteSyndicationSettings.default_enabled\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"default\": false,
+        \n          \"description\": \"If syndication should be enabled by default
+        for all folders and collections.\", \n          \"factory\": \"Yes/No\", \n
+        \         \"title\": \"Enabled by default\", \n          \"type\": \"boolean\"\n
+        \       }\n      }, \n      \"value\": false\n    }, \n    {\n      \"name\":
+        \"Products.CMFPlone.interfaces.syndication.ISiteSyndicationSettings.max_items\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"default\": 15,
+        \n          \"description\": \"Maximum number of items that will be syndicated.\",
+        \n          \"factory\": \"Integer\", \n          \"minimum\": 1, \n          \"title\":
+        \"Maximum items\", \n          \"type\": \"integer\"\n        }\n      },
+        \n      \"value\": 15\n    }, \n    {\n      \"name\": \"Products.CMFPlone.interfaces.syndication.ISiteSyndicationSettings.render_body\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"default\": false,
+        \n          \"description\": \"If body text available for item, render it,
+        otherwise use description.\", \n          \"factory\": \"Yes/No\", \n          \"title\":
+        \"Render Body\", \n          \"type\": \"boolean\"\n        }\n      }, \n
+        \     \"value\": false\n    }, \n    {\n      \"name\": \"Products.CMFPlone.interfaces.syndication.ISiteSyndicationSettings.search_rss_enabled\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"default\": true,
+        \n          \"description\": \"Allows users to subscribe to feeds of search
+        results\", \n          \"factory\": \"Yes/No\", \n          \"title\": \"Search
+        RSS enabled\", \n          \"type\": \"boolean\"\n        }\n      }, \n      \"value\":
+        true\n    }, \n    {\n      \"name\": \"Products.CMFPlone.interfaces.syndication.ISiteSyndicationSettings.show_author_info\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"default\": true,
+        \n          \"description\": \"Should feeds include author information\",
+        \n          \"factory\": \"Yes/No\", \n          \"title\": \"Show author
+        info\", \n          \"type\": \"boolean\"\n        }\n      }, \n      \"value\":
+        true\n    }, \n    {\n      \"name\": \"Products.CMFPlone.interfaces.syndication.ISiteSyndicationSettings.show_syndication_button\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"description\":
+        \"Makes it possible to customize syndication settings for particular folders
+        and collections \", \n          \"factory\": \"Yes/No\", \n          \"title\":
+        \"Show settings button\", \n          \"type\": \"boolean\"\n        }\n      },
+        \n      \"value\": null\n    }, \n    {\n      \"name\": \"Products.CMFPlone.interfaces.syndication.ISiteSyndicationSettings.show_syndication_link\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"description\":
+        \"Enable RSS link document action on the syndication content item.\", \n          \"factory\":
+        \"Yes/No\", \n          \"title\": \"Show feed link\", \n          \"type\":
+        \"boolean\"\n        }\n      }, \n      \"value\": null\n    }, \n    {\n
+        \     \"name\": \"Products.CMFPlone.interfaces.syndication.ISiteSyndicationSettings.site_rss_items\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"additionalItems\":
+        true, \n          \"default\": [\n            \"/news/aggregator\"\n          ],
+        \n          \"description\": \"Paths to folders and collections to link to
+        at the portal root.\", \n          \"factory\": \"Tuple\", \n          \"items\":
+        {\n            \"description\": \"\", \n            \"factory\": \"Choice\",
+        \n            \"title\": \"\", \n            \"type\": \"string\", \n            \"vocabulary\":
+        {\n              \"@id\": \"http://127.0.0.1:8080/Plone/@vocabularies/plone.app.vocabularies.SyndicatableFeedItems\"\n
+        \           }\n          }, \n          \"title\": \"Site RSS\", \n          \"type\":
+        \"array\", \n          \"uniqueItems\": true\n        }\n      }, \n      \"value\":
+        [\n        \"/news/aggregator\"\n      ]\n    }, \n    {\n      \"name\":
+        \"plone.alignment_styles\", \n      \"schema\": {\n        \"properties\":
+        {\n          \"additionalItems\": true, \n          \"default\": [\n            \"Left|alignleft|alignleft\",
+        \n            \"Center|aligncenter|aligncenter\", \n            \"Right|alignright|alignright\",
+        \n            \"Justify|alignjustify|alignjustify\"\n          ], \n          \"description\":
+        \"Name|format|icon\", \n          \"factory\": \"List\", \n          \"items\":
+        {\n            \"description\": \"\", \n            \"factory\": \"Text line
+        (String)\", \n            \"title\": \"\", \n            \"type\": \"string\"\n
+        \         }, \n          \"title\": \"Alignment styles\", \n          \"type\":
+        \"array\", \n          \"uniqueItems\": false\n        }\n      }, \n      \"value\":
+        [\n        \"Left|alignleft|alignleft\", \n        \"Center|aligncenter|aligncenter\",
+        \n        \"Right|alignright|alignright\", \n        \"Justify|alignjustify|alignjustify\"\n
+        \     ]\n    }, \n    {\n      \"name\": \"plone.allow_anon_views_about\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"default\": false,
+        \n          \"description\": \"If not selected only logged-in users will be
+        able to view information about who created an item and when it was modified.\",
+        \n          \"factory\": \"Yes/No\", \n          \"title\": \"Allow anyone
+        to view 'about' information\", \n          \"type\": \"boolean\"\n        }\n
+        \     }, \n      \"value\": false\n    }, \n    {\n      \"name\": \"plone.allow_external_login_sites\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"additionalItems\":
+        true, \n          \"default\": [], \n          \"description\": \"\", \n          \"factory\":
+        \"Tuple\", \n          \"items\": {\n            \"description\": \"\", \n
+        \           \"factory\": \"Text line (String)\", \n            \"title\":
+        \"\", \n            \"type\": \"string\"\n          }, \n          \"title\":
+        \"Allow external login sites\", \n          \"type\": \"array\", \n          \"uniqueItems\":
+        true\n        }\n      }, \n      \"value\": []\n    }, \n    {\n      \"name\":
+        \"plone.allowed_sizes\", \n      \"schema\": {\n        \"properties\": {\n
+        \         \"additionalItems\": true, \n          \"default\": [\n            \"large
+        768:768\", \n            \"preview 400:400\", \n            \"mini 200:200\",
+        \n            \"thumb 128:128\", \n            \"tile 64:64\", \n            \"icon
+        32:32\", \n            \"listing 16:16\"\n          ], \n          \"description\":
+        \"Specify all allowed maximum image dimensions, one per line. The required
+        format is &lt;name&gt; &lt;width&gt;:&lt;height&gt;.\", \n          \"factory\":
+        \"List\", \n          \"items\": {\n            \"description\": \"\", \n
+        \           \"factory\": \"Text line (String)\", \n            \"title\":
+        \"\", \n            \"type\": \"string\"\n          }, \n          \"title\":
+        \"Allowed image sizes\", \n          \"type\": \"array\", \n          \"uniqueItems\":
+        false\n        }\n      }, \n      \"value\": [\n        \"large 768:768\",
+        \n        \"preview 400:400\", \n        \"mini 200:200\", \n        \"thumb
+        128:128\", \n        \"tile 64:64\", \n        \"icon 32:32\", \n        \"listing
+        16:16\"\n      ]\n    }, \n    {\n      \"name\": \"plone.allowed_types\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"additionalItems\":
+        true, \n          \"default\": [\n            \"text/html\", \n            \"text/x-web-textile\"\n
+        \         ], \n          \"description\": \"Select which formats are available
+        for users as alternative to the default format. Note that if new formats are
+        installed, they will be enabled for text fields by default unless explicitly
+        turned off here or by the relevant installer.\", \n          \"factory\":
+        \"Tuple\", \n          \"items\": {\n            \"description\": \"\", \n
+        \           \"factory\": \"Choice\", \n            \"title\": \"\", \n            \"type\":
+        \"string\", \n            \"vocabulary\": {\n              \"@id\": \"http://127.0.0.1:8080/Plone/@vocabularies/plone.app.vocabularies.AllowableContentTypes\"\n
+        \           }\n          }, \n          \"title\": \"Alternative formats\",
+        \n          \"type\": \"array\", \n          \"uniqueItems\": true\n        }\n
+        \     }, \n      \"value\": [\n        \"text/html\", \n        \"text/x-web-textile\"\n
+        \     ]\n    }, \n    {\n      \"name\": \"plone.always_show_selector\", \n
+        \     \"schema\": {\n        \"properties\": {\n          \"default\": false,
+        \n          \"description\": \"\", \n          \"factory\": \"Yes/No\", \n
+        \         \"title\": \"Always show language selector\", \n          \"type\":
+        \"boolean\"\n        }\n      }, \n      \"value\": false\n    }, \n    {\n
+        \     \"name\": \"plone.app.caching.interfaces.IPloneCacheSettings.cacheStopRequestVariables\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"additionalItems\":
+        true, \n          \"default\": [\n            \"statusmessages\", \n            \"SearchableText\"\n
+        \         ], \n          \"description\": \"Variables in the request that
+        prevent caching if present\", \n          \"factory\": \"Tuple\", \n          \"items\":
+        {\n            \"description\": \"\", \n            \"factory\": \"Text line
+        (String)\", \n            \"title\": \"Request variables\", \n            \"type\":
+        \"string\"\n          }, \n          \"title\": \"Request variables that prevent
+        caching\", \n          \"type\": \"array\", \n          \"uniqueItems\": true\n
+        \       }\n      }, \n      \"value\": [\n        \"statusmessages\", \n        \"SearchableText\"\n
+        \     ]\n    }, \n    {\n      \"name\": \"plone.app.caching.interfaces.IPloneCacheSettings.contentTypeRulesetMapping\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"description\":
+        \"Maps content type names to ruleset names\", \n          \"key_type\": {\n
+        \           \"additional\": {}, \n            \"schema\": {\n              \"description\":
+        \"\", \n              \"factory\": \"Text line (String)\", \n              \"title\":
+        \"Content type name\", \n              \"type\": \"string\"\n            }\n
+        \         }, \n          \"title\": \"Content type/ruleset mapping\", \n          \"type\":
+        \"dict\", \n          \"value_type\": {\n            \"additional\": {}, \n
+        \           \"schema\": {\n              \"description\": \"\", \n              \"factory\":
+        \"Text line (String)\", \n              \"title\": \"Content type name\",
+        \n              \"type\": \"string\"\n            }\n          }\n        }\n
+        \     }, \n      \"value\": null\n    }, \n    {\n      \"name\": \"plone.app.caching.interfaces.IPloneCacheSettings.purgedContentTypes\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"additionalItems\":
+        true, \n          \"default\": [\n            \"File\", \n            \"Image\",
+        \n            \"News Item\"\n          ], \n          \"description\": \"List
+        content types which should be purged when modified\", \n          \"factory\":
+        \"Tuple\", \n          \"items\": {\n            \"description\": \"\", \n
+        \           \"factory\": \"Text line (String)\", \n            \"title\":
+        \"Content type name\", \n            \"type\": \"string\"\n          }, \n
+        \         \"title\": \"Content types to purge\", \n          \"type\": \"array\",
+        \n          \"uniqueItems\": true\n        }\n      }, \n      \"value\":
+        [\n        \"File\", \n        \"Image\", \n        \"News Item\"\n      ]\n
+        \   }, \n    {\n      \"name\": \"plone.app.caching.interfaces.IPloneCacheSettings.templateRulesetMapping\",
+        \n      \"schema\": {\n        \"properties\": {\n          \"description\":
+        \"Maps skin layer page template names to ruleset names\", \n          \"key_type\":
+        {\n            \"additional\": {}, \n            \"schema\": {\n              \"description\":
+        \"\", \n              \"factory\": \"Text line (String)\", \n              \"title\":
+        \"Page template name\", \n              \"type\": \"string\"\n            }\n
+        \         }, \n          \"title\": \"Page template/ruleset mapping\", \n
+        \         \"type\": \"dict\", \n          \"value_type\": {\n            \"additional\":
+        {}, \n            \"schema\": {\n              \"description\": \"\", \n              \"factory\":
+        \"Text line (String)\", \n              \"title\": \"Page template name\",
+        \n              \"type\": \"string\"\n            }\n          }\n        }\n
+        \     }, \n      \"value\": {\n        \"RSS\": \"plone.content.feed\", \n
+        \       \"accessibility-info\": \"plone.content.itemView\", \n        \"atom.xml\":
+        \"plone.content.feed\", \n        \"file_view\": \"plone.content.itemView\",
+        \n        \"image_view\": \"plone.content.itemView\", \n        \"image_view_fullscreen\":
+        \"plone.content.itemView\", \n        \"itunes.xml\": \"plone.content.feed\",
+        \n        \"rss.xml\": \"plone.content.feed\", \n        \"search_rss\": \"plone.content.feed\",
+        \n        \"sitemap\": \"plone.content.itemView\"\n      }\n    }, \n    {\n
+        \     \"name\": \"plone.app.caching.moderateCaching.anonOnly\", \n      \"schema\":
+        {\n        \"properties\": {\n          \"description\": \"Ensure logging
+        users always get a fresh page. Note that if you are caching pages in a proxy
+        cache, you'll still need to use a Vary response header to keep anonymous and
+        authenticated content separate.\", \n          \"factory\": \"Yes/No\", \n
+        \         \"title\": \"Only cache for anonymous users\", \n          \"type\":
+        \"boolean\"\n        }\n      }, \n      \"value\": false\n    }\n  ], \n
+        \ \"items_total\": 1808\n}"
+    headers:
+      Content-Length:
+      - '15437'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 17:16:35 GMT
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 200
+      message: OK
+version: 1

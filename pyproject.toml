@@ -31,6 +31,7 @@ source = ["plone_restapi_client"]
 [tool.coverage.report]
 exclude_lines = [
     ".raise_for_status()",
+    "if TYPE_CHECKING:",
 ]
 
 [tool.pdm]

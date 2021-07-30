@@ -1,6 +1,6 @@
 interactions:
 - request:
-    body: '{"login": "foo", "password": "bar"}'
+    body: '{"login": "admin", "password": "admin"}'
     headers:
       Accept:
       - application/json
@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '35'
+      - '39'
       Content-Type:
       - application/json
       User-Agent:
@@ -18,15 +18,14 @@ interactions:
     uri: http://localhost:8080/Plone/@login
   response:
     body:
-      string: "{\n  \"error\": {\n    \"message\": \"Wrong login and/or password.\",
-        \n    \"type\": \"Invalid credentials\"\n  }\n}"
+      string: "{\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTYyNzcxNzgyMCwiZnVsbG5hbWUiOm51bGx9.2s5g1PruVcMdLfAldcYKu6qW4oFMUIOXHExdwLB6GyY\"\n}"
     headers:
       Content-Length:
-      - '102'
+      - '162'
       Content-Type:
       - application/json
       Date:
-      - Fri, 30 Jul 2021 19:54:17 GMT
+      - Fri, 30 Jul 2021 19:50:20 GMT
       Server:
       - waitress
       Via:
@@ -36,6 +35,6 @@ interactions:
       X-Powered-By:
       - Zope (www.zope.org), Python (www.python.org)
     status:
-      code: 401
-      message: Unauthorized
+      code: 200
+      message: OK
 version: 1

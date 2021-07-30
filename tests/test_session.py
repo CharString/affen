@@ -23,18 +23,34 @@ def test_changing_root_unauthenticates(plone):
     assert "admin" in repr(plone)
     plone.root = "https://example.com"
     assert not plone.auth
-    assert "Authentication" not in plone.headers
+    assert "Authorization" not in plone.headers
     assert api.ANONYMOUS_USER in repr(plone)
+
+
+@pytest.mark.skip
+@pytest.mark.vcr
+def test_changing_root_invalidates_token():
+    plone = Session()
+    plone.login("admin", "admin")
+    assert plone.get("@registry").ok
+    old_root = plone.root
+    old_token = plone.headers["authorization"]
+    # change
+    plone.root = "https://example.com"
+    # change back
+    plone.root = old_root
+    plone.headers["authorization"] = old_token
+    assert not plone.get("@registry").ok
 
 
 def test_does_not_unauthenticate_when_root_stays_the_same():
     plone = Session(api_root="https://example.com/")
     plone.auth = ("admin", "admin")
-    plone.headers["Authentication"] = "Bearer deadbeef1234"
+    plone.headers["authorization"] = "Bearer deadbeef1234"
 
     plone.root = "https://example.com"
     assert plone.auth == ("admin", "admin")
-    assert plone.headers["Authentication"] == "Bearer deadbeef1234"
+    assert plone.headers["authorization"] == "Bearer deadbeef1234"
 
 
 def test_repr():
@@ -45,10 +61,9 @@ def test_repr():
 
 
 @pytest.mark.vcr
-def test_constructor_authenticates(plone_site):
+def test_constructor_authenticates_with_basic_authentication(plone_site):
     plone = Session("admin", "admin")
     assert plone.auth == ("admin", "admin")
-    assert plone.headers["Authentication"].startswith("Bearer")
 
 
 def test_repr_shows_user(plone):
@@ -56,7 +71,7 @@ def test_repr_shows_user(plone):
 
 
 @pytest.mark.vcr
-def test_iterating_over_foler(plone):
+def test_iterating_over_folder(plone):
     resp = plone.post(
         "", json={"@type": "Folder", "title": "Folder Iteration"}
     )
@@ -78,13 +93,21 @@ def test_iterating_over_foler(plone):
 def test_missing_restapi(vcr):
     with vcr.use_cassette("mixtapes/restapi_not_installed.yaml"):
         with pytest.raises(RuntimeError):
-            plone = Session("admin", "admin")
+            plone = Session()
+            plone.login("admin", "admin")
+
+
+@pytest.mark.vcr
+def test_login_sets_token():
+    plone = Session()
+    plone.login("admin", "admin")
+    assert plone.headers["authorization"].startswith("Bearer")
 
 
 @pytest.mark.vcr
 def test_wrong_credentials():
     with pytest.raises(ValueError) as info:
-        plone = Session("foo", "bar")
+        Session().login("foo", "bar")
 
 
 @pytest.mark.vcr
@@ -96,6 +119,6 @@ def test_does_not_leak_authentication(plone):
 @pytest.fixture(scope="module")
 def vcr_config():
     return {
-        "filter_headers": ["authorization", "authentication"],
-        "record_mode": "none",
+        "filter_headers": ["authorization"],
+        "record_mode": "once",
     }

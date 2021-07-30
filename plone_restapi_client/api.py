@@ -40,7 +40,7 @@ class Session(requests.Session):
         self.hooks["response"] = [self._error_handler]
         if user and password:
             self.auth = (user, password)
-            self.login(user, password)
+            self.user = user
 
     def __repr__(self) -> str:
         return (
@@ -65,7 +65,7 @@ class Session(requests.Session):
         url = urlsplit(urldefrag(url)[0]).geturl().strip("/") + "/"
         if self.__api_root != url:
             self.auth = None
-            self.headers.pop("Authentication", None)
+            self.headers.pop("Authorization", None)
             self.user = ANONYMOUS_USER
             self.__api_root = url
 
@@ -80,7 +80,7 @@ class Session(requests.Session):
         if not url.startswith(self.root):
             raise ValueError(
                 "Making requests to other hosts than {self.root} may leak credentials. "
-                "Use a different requests.Session for those."
+                "Use a different requests.Session for those or change root"
             )
         return super().request(method, url, *args, **kwargs)
 
@@ -102,7 +102,7 @@ class Session(requests.Session):
         self.user = user
         self.__token = resp.json()["token"]
         self.auth = (user, password)
-        self.headers.update(authentication=f"Bearer {self.__token}")
+        self.headers.update(authorization=f"Bearer {self.__token}")
         return resp
 
     def items(self, container: str) -> BatchingIterator:

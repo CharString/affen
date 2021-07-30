@@ -53,11 +53,3 @@ def test_registry_update(plone):
     )
     assert plone.registry["plone.allow_anon_views_about"] == False
     assert plone.registry["plone.always_show_selector"] == False
-
-
-@pytest.fixture(scope="module")
-def vcr_config():
-    return {
-        "filter_headers": ["authorization", "authentication"],
-        "record_mode": "once",
-    }

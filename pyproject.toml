@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 [project]
-name = "Affen"
+name = "affen"
 version = {use_scm = true}
 description = "plone.restapi for Humans™"
 readme = "README.md"
@@ -40,7 +40,6 @@ exclude_lines = [
 ]
 
 [tool.pdm]
-package-dir = "affen"
 [tool.pdm.dev-dependencies]
 dev = [
     "black~=21.7b0",
@@ -55,4 +54,3 @@ dev = [
 docker = "tests/conftest.py"
 test = "pytest --vcr-record=none"
 lint = "pre-commit run --all-files"
-

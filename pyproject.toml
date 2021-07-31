@@ -39,6 +39,9 @@ exclude_lines = [
     "if TYPE_CHECKING:",
 ]
 
+[tool.isort]
+profile = "black"
+
 [tool.pdm]
 [tool.pdm.dev-dependencies]
 dev = [

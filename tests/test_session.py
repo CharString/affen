@@ -121,6 +121,11 @@ def test_does_not_leak_authentication(plone):
     assert "http://127.0.0.1:8080/Plone" in str(info.value)
 
 
+@pytest.mark.vcr
+def test_accepts_absolute_paths_even_if_api_root_is_not_at_host_root(plone):
+    assert plone.get("/@search").ok
+
+
 @pytest.fixture(scope="module")
 def vcr_config():
     return {

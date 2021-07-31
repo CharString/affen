@@ -80,7 +80,7 @@ class Session(requests.Session):
         *args,
         **kwargs,
     ) -> requests.Response:
-        url = urljoin(self.root, url)
+        url = urljoin(self.root, url.lstrip("/"))
         if not url.startswith(self.root):
             raise ValueError(
                 f"Making requests to other hosts than {self.root} may leak credentials. "

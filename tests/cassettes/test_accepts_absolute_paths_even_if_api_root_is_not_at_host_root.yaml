@@ -1,0 +1,58 @@
+# SPDX-FileCopyrightText: 2021 Centrum Wiskune en Informatica
+#
+# SPDX-License-Identifier: MPL-2.0
+
+interactions:
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: GET
+    uri: http://127.0.0.1:8080/Plone/@search
+  response:
+    body:
+      string: "{\n  \"@id\": \"http://127.0.0.1:8080/Plone/@search\", \n  \"items\":
+        [\n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/front-page\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"Congratulations! You have successfully
+        installed Plone.\", \n      \"review_state\": \"published\", \n      \"title\":
+        \"Welcome to Plone\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/news\",
+        \n      \"@type\": \"Folder\", \n      \"description\": \"Site News\", \n
+        \     \"review_state\": \"published\", \n      \"title\": \"News\"\n    },
+        \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/news/aggregator\", \n
+        \     \"@type\": \"Collection\", \n      \"description\": \"Site News\", \n
+        \     \"review_state\": \"published\", \n      \"title\": \"News\"\n    },
+        \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/events\", \n      \"@type\":
+        \"Folder\", \n      \"description\": \"Site Events\", \n      \"review_state\":
+        \"published\", \n      \"title\": \"Events\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/events/aggregator\", \n      \"@type\": \"Collection\",
+        \n      \"description\": \"Site Events\", \n      \"review_state\": \"published\",
+        \n      \"title\": \"Events\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/Members\",
+        \n      \"@type\": \"Folder\", \n      \"description\": \"Site Users\", \n
+        \     \"review_state\": \"private\", \n      \"title\": \"Users\"\n    }\n
+        \ ], \n  \"items_total\": 6\n}"
+    headers:
+      Content-Length:
+      - '1297'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 31 Jul 2021 02:27:04 GMT
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 200
+      message: OK
+version: 1

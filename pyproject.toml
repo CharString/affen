@@ -6,6 +6,7 @@
 name = "Affen"
 version = {use_scm = true}
 description = "plone.restapi for Humans™"
+readme = "README.md"
 authors = [
     {name = "Chris Wesseling", email = "Chris.Wesseling@cwi.nl"},
 ]

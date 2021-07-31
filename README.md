@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2021 Centrum Wiskune en Informatica
+
+SPDX-License-Identifier: CC0-1.0
+-->
+
 # Affen: plone.restapi for Humans™
 
 **Affen** is a [requests](https://docs.python-requests.org) Session equiped to

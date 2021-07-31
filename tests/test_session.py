@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2021 Centrum Wiskune en Informatica
+#
+# SPDX-License-Identifier: MPL-2.0
+
 from urllib.parse import urlparse
 
 import pytest

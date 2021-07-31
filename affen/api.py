@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2021 Centrum Wiskune en Informatica
+#
+# SPDX-License-Identifier: MPL-2.0
+
 import re
 from typing import Any, Generator, Union
 from urllib.parse import urldefrag, urljoin, urlsplit, urlunsplit

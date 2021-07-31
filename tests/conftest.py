@@ -1,4 +1,9 @@
 #!/bin/env python3
+
+# SPDX-FileCopyrightText: 2021 Centrum Wiskune en Informatica
+#
+# SPDX-License-Identifier: MPL-2.0
+
 from pathlib import Path
 from subprocess import run
 from time import sleep

@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2021 Centrum Wiskune en Informatica
+# SPDX-FileCopyrightText: 2021 Centrum Wiskunde en Informatica
 #
 # SPDX-License-Identifier: MPL-2.0
 

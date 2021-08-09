@@ -12,7 +12,7 @@ if TYPE_CHECKING:
 class BatchingIterator:
     def __init__(self, url: str, iterable: Iterable, length: int):
         self.url = url
-        self.iterable = iterable
+        self.iterator = iter(iterable)
         self.length = length
 
     def __repr__(self) -> str:
@@ -22,7 +22,10 @@ class BatchingIterator:
         return self.length
 
     def __iter__(self):
-        return self.iterable
+        return self.iterator
+
+    def __next__(self):
+        return next(self.iterator)
 
 
 class Registry:

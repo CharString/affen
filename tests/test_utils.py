@@ -5,6 +5,13 @@
 import pytest
 
 from affen import Session
+from affen.utils import BatchingIterator
+
+
+def test_calling_next_on_batchingiterator():
+    iterator = BatchingIterator("https://example.com", range(10), 10)
+    assert next(iterator) == 0
+    assert next(iterator) == 1
 
 
 @pytest.mark.vcr

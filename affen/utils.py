@@ -10,7 +10,7 @@ if TYPE_CHECKING:
 
 
 class BatchingIterator:
-    def __init__(self, url: str, iterable: Iterable, length: int):
+    def __init__(self, url: str, iterable: Iterable[dict], length: int):
         self.url = url
         self.iterator = iter(iterable)
         self.length = length
@@ -18,7 +18,7 @@ class BatchingIterator:
     def __repr__(self) -> str:
         return f"<{self.__class__.__name__}: {self.url}>"
 
-    def __len__(self):
+    def __len__(self) -> int:
         return self.length
 
     def __iter__(self):

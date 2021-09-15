@@ -3,6 +3,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 import re
+from json import JSONDecodeError
 from typing import Any, Generator, Union
 from urllib.parse import urldefrag, urljoin, urlsplit, urlunsplit
 
@@ -88,7 +89,7 @@ class Session(requests.Session):
             )
         return super().request(method, url, *args, **kwargs)
 
-    def login(self, user: str, password: str):
+    def login(self, user: str, password: str) -> requests.Response:
         'Authenticate and add the "Bearer" token to the headers'
         resp = self.post(
             f"@login",
@@ -96,7 +97,7 @@ class Session(requests.Session):
             headers={"Accept": "application/json"},
         )
         if not resp.ok:
-            error = resp.json()["error"]
+            error = self._json(resp)["error"]
             if resp.status_code == 501:
                 raise RuntimeError(error)
             if 399 < resp.status_code < 500:
@@ -104,7 +105,7 @@ class Session(requests.Session):
             resp.raise_for_status()
 
         self.user = user
-        self.__token = resp.json()["token"]
+        self.__token = self._json(resp)["token"]
         self.auth = (user, password)
         self.headers.update(authorization=f"Bearer {self.__token}")
         return resp
@@ -123,9 +124,16 @@ class Session(requests.Session):
            `container` during iteration may result in items not yielded.
         """
         resp = self.get(container)
-        d = resp.json()
+        d = self._json(resp)
         length = d.get("items_total", len(d.get("items", [])))
         return BatchingIterator(container, self._items(resp), length)
+
+    def _json(self, resp: requests.Response) -> dict:
+        try:
+            d = resp.json()
+        except JSONDecodeError as e:
+            raise TypeError("Server did not return JSON") from e
+        return d
 
     def _items(
         self, container: Union[str, requests.Response]
@@ -135,7 +143,7 @@ class Session(requests.Session):
         else:
             resp = self.get(container)
         resp.raise_for_status()
-        result = resp.json()
+        result = self._json(resp)
         for item in result.get("items", []):
             yield item
 

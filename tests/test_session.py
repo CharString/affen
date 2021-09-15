@@ -94,6 +94,13 @@ def test_iterating_over_folder(plone):
     assert "folder-iteration" in repr(iterator)
 
 
+@pytest.mark.vcr
+def test_items_raises_error_on_bad_response():
+    not_plone = Session("foo", "bar", "https://example.com")
+    with pytest.raises(TypeError):
+        next(not_plone.items("/"))
+
+
 def test_missing_restapi(vcr):
     with vcr.use_cassette("mixtapes/restapi_not_installed.yaml"):
         with pytest.raises(RuntimeError):

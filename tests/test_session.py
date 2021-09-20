@@ -31,22 +31,6 @@ def test_changing_root_unauthenticates(plone):
     assert api.ANONYMOUS_USER in repr(plone)
 
 
-@pytest.mark.skip
-@pytest.mark.vcr
-def test_changing_root_invalidates_token():
-    plone = Session()
-    plone.login("admin", "admin")
-    assert plone.get("@registry").ok
-    old_root = plone.root
-    old_token = plone.headers["authorization"]
-    # change
-    plone.root = "https://example.com"
-    # change back
-    plone.root = old_root
-    plone.headers["authorization"] = old_token
-    assert not plone.get("@registry").ok
-
-
 def test_does_not_unauthenticate_when_root_stays_the_same():
     plone = Session(api_root="https://example.com/")
     plone.auth = ("admin", "admin")

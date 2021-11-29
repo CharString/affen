@@ -86,7 +86,8 @@ def test_items_raises_error_on_bad_response():
 
 
 def test_missing_restapi(vcr):
-    with vcr.use_cassette("mixtapes/restapi_not_installed.yaml"):
+    with vcr.use_cassette("mixtapes/restapi_not_installed.yaml",
+                          record_mode='once'):
         with pytest.raises(RuntimeError):
             plone = Session()
             plone.login("admin", "admin")

@@ -14,11 +14,14 @@ from requests import ConnectionError, get
 
 from affen import Session
 
+DOCKER_CMD = "docker"
+
 
 def docker_run(host, port, site) -> str:
+    global DOCKER_CMD
     proc = run(
         [
-            "docker",
+            DOCKER_CMD,
             "run",
             "-p",
             f"{host}:{port}:8080",
@@ -33,13 +36,16 @@ def docker_run(host, port, site) -> str:
         encoding="utf8",
     )
     if proc.returncode:
+        if DOCKER_CMD == "docker":
+            DOCKER_CMD = "podman"
+            return docker_run(host, port, site)
         raise RuntimeError("Failed to start Plone instance:\n" + proc.stderr)
     container_id = proc.stdout.strip()
     return "plone_restapi_tests"
 
 
 def docker_stop(container_id: str) -> None:
-    run(["docker", "rm", "-f", container_id])
+    run([DOCKER_CMD, "rm", "-f", container_id])
 
 
 def is_up(url: str) -> bool:

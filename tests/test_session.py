@@ -58,36 +58,10 @@ def test_repr_shows_user(plone):
     assert "admin" in repr(plone)
 
 
-@pytest.mark.vcr
-def test_iterating_over_folder(plone):
-    resp = plone.post(
-        "", json={"@type": "Folder", "title": "Folder Iteration"}
-    )
-    assert resp.ok
-    folder_url = resp.json()["@id"]
-    for i in range(50):
-        page = plone.post(
-            folder_url, json={"@type": "Document", "title": f"Page {i} test."}
-        )
-        assert page.ok, page.json()
-
-    page_titles = [p["title"] for p in plone.items(folder_url)]
-    assert set(page_titles) == set([f"Page {i} test." for i in range(50)])
-    iterator = plone.items(folder_url)
-    assert len(iterator) == 50
-    assert "folder-iteration" in repr(iterator)
-
-
-@pytest.mark.vcr
-def test_items_raises_error_on_bad_response():
-    not_plone = Session("foo", "bar", "https://example.com")
-    with pytest.raises(TypeError):
-        next(not_plone.items("/"))
-
-
 def test_missing_restapi(vcr):
-    with vcr.use_cassette("mixtapes/restapi_not_installed.yaml",
-                          record_mode='once'):
+    with vcr.use_cassette(
+        "mixtapes/restapi_not_installed.yaml", record_mode="once"
+    ):
         with pytest.raises(RuntimeError):
             plone = Session()
             plone.login("admin", "admin")

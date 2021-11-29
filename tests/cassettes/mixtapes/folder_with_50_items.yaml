@@ -1,0 +1,3165 @@
+# SPDX-FileCopyrightText: 2021 Centrum Wiskunde en Informatica
+#
+# SPDX-License-Identifier: MPL-2.0
+
+interactions:
+- request:
+    body: '{"@type": "Folder", "title": "Folder Iteration"}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '48'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n  \"@type\": \"Folder\", \n  \"UID\": \"ccdedf1fc9e144169e3956b35fc6ecd0\",
+        \n  \"allow_discussion\": false, \n  \"contributors\": [], \n  \"created\":
+        \"2021-07-30T01:16:03+00:00\", \n  \"creators\": [\n    \"admin\"\n  ], \n
+        \ \"description\": \"\", \n  \"effective\": null, \n  \"exclude_from_nav\":
+        false, \n  \"expires\": null, \n  \"id\": \"folder-iteration\", \n  \"is_folderish\":
+        true, \n  \"items\": [], \n  \"items_total\": 0, \n  \"language\": \"\", \n
+        \ \"layout\": \"listing_view\", \n  \"modified\": \"2021-07-30T01:16:03+00:00\",
+        \n  \"nextPreviousEnabled\": false, \n  \"next_item\": {}, \n  \"parent\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone\", \n    \"@type\": \"Plone
+        Site\", \n    \"description\": \"\", \n    \"title\": \"\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/Members\", \n    \"@type\":
+        \"Folder\", \n    \"description\": \"Site Users\", \n    \"title\": \"Users\"\n
+        \ }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\", \n  \"rights\":
+        \"\", \n  \"subjects\": [], \n  \"title\": \"Folder Iteration\", \n  \"version\":
+        \"current\"\n}"
+    headers:
+      Content-Length:
+      - '1640'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:03 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 0 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '46'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-0-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-0-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-0-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-0-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-0-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-0-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-0-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"0935486499b042b3b8ae9e4668289558\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:03+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-0-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:03+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {}, \n  \"relatedItems\": [], \n  \"review_state\": \"private\", \n  \"rights\":
+        \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null, \n  \"text\":
+        null, \n  \"title\": \"Page 0 test.\", \n  \"version\": \"current\", \n  \"versioning_enabled\":
+        true\n}"
+    headers:
+      Content-Length:
+      - '1676'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:03 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-0-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 1 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '46'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-1-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-1-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-1-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-1-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-1-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-1-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-1-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"710403c50f2c422f989b9cc791d7250f\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:03+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-1-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:03+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-0-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 0 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 1 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1829'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:03 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-1-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 2 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '46'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-2-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-2-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-2-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-2-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-2-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-2-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-2-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"6d7512438d904701933a15e83c3f2e3d\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:03+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-2-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:03+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-1-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 1 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 2 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1829'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:03 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-2-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 3 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '46'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-3-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-3-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-3-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-3-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-3-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-3-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-3-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"2d17580343ea4b85a94f44b5fee5181b\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:03+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-3-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:03+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-2-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 2 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 3 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1829'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:03 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-3-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 4 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '46'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-4-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-4-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-4-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-4-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-4-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-4-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-4-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"22fefb5e9bba447d8a51430a55914dc6\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:03+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-4-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:03+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-3-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 3 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 4 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1829'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:03 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-4-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 5 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '46'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-5-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-5-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-5-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-5-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-5-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-5-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-5-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"924474f88ea043669b2659c450b0e6b8\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:03+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-5-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:03+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-4-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 4 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 5 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1829'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:04 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-5-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 6 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '46'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-6-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-6-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-6-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-6-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-6-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-6-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-6-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"351b084ba6f24508ac8b99c2a8826c10\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:04+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-6-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:04+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-5-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 5 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 6 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1829'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:04 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-6-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 7 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '46'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-7-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-7-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-7-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-7-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-7-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-7-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-7-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"7e04078c3f294af4a2330da999171181\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:04+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-7-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:04+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-6-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 6 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 7 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1829'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:04 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-7-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 8 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '46'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-8-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-8-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-8-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-8-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-8-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-8-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-8-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"2f1fc3b28e9d4f2a821146ac5f6ae532\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:04+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-8-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:04+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-7-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 7 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 8 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1829'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:04 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-8-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 9 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '46'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-9-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-9-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-9-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-9-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-9-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-9-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-9-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"3181f13bbc314394bce0b59e571d98f8\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:04+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-9-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:04+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-8-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 8 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 9 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1829'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:04 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-9-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 10 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-10-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-10-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-10-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-10-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-10-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-10-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-10-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"45ece13ed2ff4268925cc6215682abe3\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:04+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-10-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:04+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-9-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 9 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 10 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1838'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:04 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-10-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 11 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-11-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-11-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-11-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-11-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-11-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-11-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-11-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"ec9874f9b84c4f85b8884e5aa0686412\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:04+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-11-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:04+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-10-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 10 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 11 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:04 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-11-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 12 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-12-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-12-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-12-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-12-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-12-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-12-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-12-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"aa225e8ec65947baa740e4c58044151f\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:04+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-12-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:04+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-11-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 11 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 12 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:04 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-12-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 13 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-13-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-13-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-13-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-13-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-13-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-13-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-13-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"373d51d572af4612b5f3b461aeb05a53\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:04+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-13-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:04+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-12-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 12 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 13 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:04 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-13-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 14 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-14-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-14-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-14-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-14-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-14-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-14-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-14-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"be3ce4ecdca349e4ac49a5340d222688\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:04+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-14-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:04+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-13-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 13 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 14 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:04 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-14-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 15 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-15-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-15-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-15-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-15-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-15-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-15-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-15-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"f7f693874fad44a9bb060cd633b9fa25\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:04+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-15-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:05+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-14-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 14 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 15 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:05 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-15-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 16 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-16-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-16-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-16-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-16-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-16-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-16-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-16-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"5a02c025a2d441b39f8f35c40dc5fb91\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:05+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-16-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:05+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-15-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 15 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 16 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:05 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-16-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 17 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-17-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-17-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-17-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-17-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-17-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-17-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-17-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"267de30757b14ff1937b5dcd61691811\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:05+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-17-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:05+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-16-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 16 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 17 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:05 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-17-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 18 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-18-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-18-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-18-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-18-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-18-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-18-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-18-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"fd9add5763054dc29fc40c03d31eb36e\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:05+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-18-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:05+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-17-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 17 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 18 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:05 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-18-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 19 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-19-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-19-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-19-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-19-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-19-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-19-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-19-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"80db7c181d044cd195ba7f4f265ee426\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:05+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-19-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:05+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-18-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 18 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 19 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:05 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-19-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 20 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-20-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-20-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-20-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-20-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-20-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-20-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-20-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"ff279b690f32493e93360a89f5debb9c\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:05+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-20-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:05+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-19-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 19 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 20 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:05 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-20-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 21 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-21-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-21-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-21-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-21-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-21-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-21-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-21-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"b2156bb3b35a4866aacc0570fba27657\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:05+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-21-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:05+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-20-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 20 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 21 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:05 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-21-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 22 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-22-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-22-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-22-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-22-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-22-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-22-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-22-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"92a1017159e14da0bb94522bba41507f\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:05+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-22-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:05+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-21-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 21 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 22 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:05 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-22-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 23 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-23-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-23-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-23-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-23-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-23-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-23-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-23-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"1779f279f8b94c52a4f73c36f1faa591\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:05+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-23-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:05+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-22-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 22 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 23 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:05 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-23-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 24 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-24-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-24-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-24-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-24-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-24-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-24-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-24-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"cb5c632b423b413baa76b805e819c2d3\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:05+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-24-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:05+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-23-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 23 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 24 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:06 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-24-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 25 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-25-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-25-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-25-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-25-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-25-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-25-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-25-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"025087c0592f42e88ae73f90ebd4e85a\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:06+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-25-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:06+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-24-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 24 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 25 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:06 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-25-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 26 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-26-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-26-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-26-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-26-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-26-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-26-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-26-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"d12b0499c819433e9fe6d43efd817f64\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:06+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-26-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:06+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-25-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 25 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 26 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:06 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-26-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 27 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-27-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-27-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-27-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-27-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-27-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-27-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-27-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"4277a2d4fdfb4df3a4a58118c9a84e26\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:06+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-27-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:06+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-26-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 26 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 27 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:06 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-27-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 28 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-28-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-28-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-28-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-28-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-28-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-28-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-28-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"a26d2625e93a4ab58ac9cf5a0c2f556d\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:06+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-28-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:06+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-27-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 27 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 28 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:06 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-28-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 29 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-29-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-29-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-29-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-29-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-29-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-29-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-29-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"f1ca6dacb03e41a0849fcf3f848b6a9c\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:06+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-29-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:06+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-28-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 28 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 29 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:06 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-29-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 30 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-30-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-30-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-30-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-30-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-30-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-30-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-30-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"999285ee513a402786a53e796624bd1e\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:06+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-30-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:06+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-29-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 29 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 30 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:06 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-30-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 31 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-31-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-31-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-31-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-31-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-31-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-31-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-31-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"051429be3a934e33b9592cab1e168203\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:06+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-31-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:06+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-30-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 30 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 31 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:06 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-31-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 32 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-32-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-32-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-32-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-32-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-32-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-32-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-32-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"063bf3ba848043c28a22845f240299d4\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:06+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-32-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:06+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-31-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 31 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 32 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:06 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-32-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 33 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-33-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-33-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-33-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-33-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-33-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-33-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-33-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"a4687942e70d4cef82947be28d3d3d1c\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:06+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-33-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:06+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-32-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 32 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 33 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:07 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-33-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 34 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-34-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-34-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-34-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-34-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-34-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-34-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-34-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"0cc057c28bf54cbba9bdc7c6c3458186\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:07+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-34-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:07+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-33-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 33 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 34 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:07 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-34-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 35 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-35-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-35-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-35-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-35-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-35-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-35-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-35-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"34143bc390ec40a09dba50a8af319689\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:07+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-35-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:07+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-34-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 34 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 35 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:07 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-35-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 36 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-36-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-36-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-36-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-36-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-36-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-36-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-36-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"133354c03ac64bd98981f071db70ab5c\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:07+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-36-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:07+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-35-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 35 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 36 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:07 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-36-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 37 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-37-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-37-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-37-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-37-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-37-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-37-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-37-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"bd6089e817fd4ac685beb389f6070b0f\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:07+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-37-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:07+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-36-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 36 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 37 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:07 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-37-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 38 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-38-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-38-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-38-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-38-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-38-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-38-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-38-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"483269db99114f7e924418a1251576c1\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:07+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-38-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:07+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-37-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 37 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 38 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:07 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-38-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 39 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-39-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-39-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-39-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-39-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-39-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-39-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-39-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"93d985ef21c84222a42048515387e9e3\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:07+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-39-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:07+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-38-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 38 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 39 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:07 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-39-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 40 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-40-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-40-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-40-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-40-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-40-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-40-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-40-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"47cb297f39b64f98a4b3f7077f8ac841\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:07+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-40-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:07+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-39-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 39 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 40 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:07 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-40-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 41 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-41-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-41-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-41-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-41-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-41-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-41-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-41-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"647668b945324f1c8aa8c3040b9a742f\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:07+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-41-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:07+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-40-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 40 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 41 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:07 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-41-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 42 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-42-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-42-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-42-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-42-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-42-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-42-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-42-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"e5ca797d68c64b788ca72fc7f8b57297\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:07+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-42-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:07+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-41-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 41 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 42 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:08 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-42-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 43 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-43-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-43-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-43-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-43-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-43-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-43-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-43-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"565ee28856e34bd5ade16e487a131f1d\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:08+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-43-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:08+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-42-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 42 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 43 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:08 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-43-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 44 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-44-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-44-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-44-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-44-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-44-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-44-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-44-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"fe4ccd1742a341809a8be2311cd93592\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:08+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-44-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:08+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-43-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 43 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 44 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:08 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-44-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 45 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-45-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-45-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-45-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-45-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-45-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-45-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-45-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"eb36bb9dc5c7458ea222b3a07a4373ad\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:08+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-45-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:08+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-44-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 44 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 45 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:08 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-45-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 46 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-46-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-46-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-46-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-46-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-46-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-46-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-46-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"273ac4321c69482eb2267867686abeaf\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:08+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-46-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:08+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-45-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 45 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 46 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:08 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-46-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 47 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-47-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-47-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-47-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-47-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-47-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-47-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-47-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"c27f32338a064c1a8b648df7794c51e0\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:08+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-47-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:08+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-46-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 46 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 47 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:08 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-47-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 48 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-48-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-48-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-48-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-48-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-48-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-48-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-48-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"16c53539075f4af29af4950955c4c18d\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:08+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-48-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:08+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-47-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 47 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 48 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:08 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-48-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"@type": "Document", "title": "Page 49 test."}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: POST
+    uri: http://127.0.0.1:8080/Plone/folder-iteration
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-49-test/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-49-test/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-49-test/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-49-test/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-49-test/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-49-test/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-49-test\",
+        \n  \"@type\": \"Document\", \n  \"UID\": \"7eebf1fb2f244bccbf1d4aafec5134e7\",
+        \n  \"allow_discussion\": false, \n  \"changeNote\": \"\", \n  \"contributors\":
+        [], \n  \"created\": \"2021-07-30T01:16:08+00:00\", \n  \"creators\": [\n
+        \   \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\": null, \n
+        \ \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\": \"page-49-test\",
+        \n  \"is_folderish\": false, \n  \"language\": \"\", \n  \"layout\": \"document_view\",
+        \n  \"modified\": \"2021-07-30T01:16:08+00:00\", \n  \"next_item\": {}, \n
+        \ \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"\", \n    \"review_state\":
+        \"private\", \n    \"title\": \"Folder Iteration\"\n  }, \n  \"previous_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-48-test\",
+        \n    \"@type\": \"Document\", \n    \"description\": \"\", \n    \"title\":
+        \"Page 48 test.\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"table_of_contents\": null,
+        \n  \"text\": null, \n  \"title\": \"Page 49 test.\", \n  \"version\": \"current\",
+        \n  \"versioning_enabled\": true\n}"
+    headers:
+      Content-Length:
+      - '1840'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 01:16:08 GMT
+      Location:
+      - http://127.0.0.1:8080/Plone/folder-iteration/page-49-test
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 201
+      message: Created
+version: 1

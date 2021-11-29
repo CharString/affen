@@ -3,13 +3,12 @@
 # SPDX-License-Identifier: MPL-2.0
 
 import re
-from json import JSONDecodeError
-from typing import Any, Generator, Union
+from typing import Any
 from urllib.parse import urldefrag, urljoin, urlsplit, urlunsplit
 
 import requests
 
-from .utils import BatchingIterator, Registry
+from .utils import BatchingIterator, Registry, _json
 
 DEFAULT_ROOT = "http://localhost:8080/Plone/"
 ANONYMOUS_USER = "Anonymous"
@@ -123,32 +122,7 @@ class Session(requests.Session):
         NB this is not an atomic operation; ie modifing the number of items in
            `container` during iteration may result in items not yielded.
         """
-        resp = self.get(container)
-        d = self._json(resp)
-        length = d.get("items_total", len(d.get("items", [])))
-        return BatchingIterator(container, self._items(resp), length)
+        return BatchingIterator(container, self)
 
     def _json(self, resp: requests.Response) -> dict:
-        try:
-            d = resp.json()
-        except JSONDecodeError as e:
-            raise TypeError("Server did not return JSON") from e
-        return d
-
-    def _items(
-        self, container: Union[str, requests.Response]
-    ) -> Generator[dict, None, None]:
-        if isinstance(container, requests.Response):
-            resp = container
-        else:
-            resp = self.get(container)
-        resp.raise_for_status()
-        result = self._json(resp)
-        for item in result.get("items", []):
-            yield item
-
-        more = result.get("batching", {}).get("next")
-        if more:
-            # tail recursion is not a thing in Python
-            # this might overflow stack for huge results ?!
-            yield from self._items(more)
+        return _json(resp)

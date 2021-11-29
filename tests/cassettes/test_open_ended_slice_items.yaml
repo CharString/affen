@@ -1,0 +1,245 @@
+# SPDX-FileCopyrightText: 2021 Centrum Wiskunde en Informatica
+#
+# SPDX-License-Identifier: MPL-2.0
+
+interactions:
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Basic YWRtaW46YWRtaW4=
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: GET
+    uri: http://127.0.0.1:8080/Plone/folder-iteration?b_start=5
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n  \"@type\": \"Folder\", \n  \"UID\": \"f6ced7f9b2c34406926f6d9cc3973bac\",
+        \n  \"allow_discussion\": false, \n  \"batching\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration?b_start=5\",
+        \n    \"first\": \"http://127.0.0.1:8080/Plone/folder-iteration?b_start=0\",
+        \n    \"last\": \"http://127.0.0.1:8080/Plone/folder-iteration?b_start=25\",
+        \n    \"next\": \"http://127.0.0.1:8080/Plone/folder-iteration?b_start=30\",
+        \n    \"prev\": \"http://127.0.0.1:8080/Plone/folder-iteration?b_start=0\"\n
+        \ }, \n  \"contributors\": [], \n  \"created\": \"2021-11-25T19:28:04+00:00\",
+        \n  \"creators\": [\n    \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\":
+        null, \n  \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\":
+        \"folder-iteration\", \n  \"is_folderish\": true, \n  \"items\": [\n    {\n
+        \     \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-5-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 5 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-6-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 6 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-7-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 7 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-8-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 8 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-9-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 9 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-10-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 10 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-11-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 11 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-12-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 12 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-13-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 13 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-14-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 14 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-15-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 15 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-16-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 16 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-17-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 17 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-18-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 18 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-19-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 19 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-20-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 20 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-21-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 21 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-22-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 22 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-23-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 23 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-24-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 24 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-25-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 25 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-26-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 26 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-27-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 27 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-28-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 28 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-29-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 29 test.\"\n    }\n  ], \n  \"items_total\":
+        50, \n  \"language\": \"\", \n  \"layout\": \"listing_view\", \n  \"modified\":
+        \"2021-11-25T19:28:08+00:00\", \n  \"nextPreviousEnabled\": false, \n  \"next_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration-1\", \n    \"@type\":
+        \"Folder\", \n    \"description\": \"\", \n    \"title\": \"Folder Iteration\"\n
+        \ }, \n  \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone\", \n    \"@type\":
+        \"Plone Site\", \n    \"description\": \"\", \n    \"title\": \"\"\n  }, \n
+        \ \"previous_item\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/Members\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"Site Users\", \n    \"title\":
+        \"Users\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"title\": \"Folder Iteration\",
+        \n  \"version\": \"current\"\n}"
+    headers:
+      Content-Length:
+      - '7354'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 29 Nov 2021 15:50:42 GMT
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Basic YWRtaW46YWRtaW4=
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: GET
+    uri: http://127.0.0.1:8080/Plone/folder-iteration?b_start=30
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n  \"@type\": \"Folder\", \n  \"UID\": \"f6ced7f9b2c34406926f6d9cc3973bac\",
+        \n  \"allow_discussion\": false, \n  \"batching\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration?b_start=30\",
+        \n    \"first\": \"http://127.0.0.1:8080/Plone/folder-iteration?b_start=0\",
+        \n    \"last\": \"http://127.0.0.1:8080/Plone/folder-iteration?b_start=25\",
+        \n    \"prev\": \"http://127.0.0.1:8080/Plone/folder-iteration?b_start=5\"\n
+        \ }, \n  \"contributors\": [], \n  \"created\": \"2021-11-25T19:28:04+00:00\",
+        \n  \"creators\": [\n    \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\":
+        null, \n  \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\":
+        \"folder-iteration\", \n  \"is_folderish\": true, \n  \"items\": [\n    {\n
+        \     \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-30-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 30 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-31-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 31 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-32-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 32 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-33-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 33 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-34-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 34 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-35-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 35 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-36-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 36 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-37-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 37 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-38-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 38 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-39-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 39 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-40-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 40 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-41-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 41 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-42-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 42 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-43-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 43 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-44-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 44 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-45-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 45 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-46-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 46 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-47-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 47 test.\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-48-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 48 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-49-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 49 test.\"\n    }\n  ], \n  \"items_total\": 50,
+        \n  \"language\": \"\", \n  \"layout\": \"listing_view\", \n  \"modified\":
+        \"2021-11-25T19:28:08+00:00\", \n  \"nextPreviousEnabled\": false, \n  \"next_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration-1\", \n    \"@type\":
+        \"Folder\", \n    \"description\": \"\", \n    \"title\": \"Folder Iteration\"\n
+        \ }, \n  \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone\", \n    \"@type\":
+        \"Plone Site\", \n    \"description\": \"\", \n    \"title\": \"\"\n  }, \n
+        \ \"previous_item\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/Members\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"Site Users\", \n    \"title\":
+        \"Users\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"title\": \"Folder Iteration\",
+        \n  \"version\": \"current\"\n}"
+    headers:
+      Content-Length:
+      - '6253'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 29 Nov 2021 15:50:42 GMT
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 200
+      message: OK
+version: 1

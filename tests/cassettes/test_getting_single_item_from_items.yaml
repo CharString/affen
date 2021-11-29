@@ -1,0 +1,72 @@
+# SPDX-FileCopyrightText: 2021 Centrum Wiskunde en Informatica
+#
+# SPDX-License-Identifier: MPL-2.0
+
+interactions:
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Basic YWRtaW46YWRtaW4=
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: GET
+    uri: http://127.0.0.1:8080/Plone/folder-iteration?b_size=1&b_start=5
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@navigation\"\n
+        \   }, \n    \"types\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@types\"\n
+        \   }, \n    \"workflow\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@workflow\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n  \"@type\": \"Folder\", \n  \"UID\": \"f6ced7f9b2c34406926f6d9cc3973bac\",
+        \n  \"allow_discussion\": false, \n  \"batching\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration?b_size=1&b_start=5\",
+        \n    \"first\": \"http://127.0.0.1:8080/Plone/folder-iteration?b_start=0&b_size=1\",
+        \n    \"last\": \"http://127.0.0.1:8080/Plone/folder-iteration?b_start=49&b_size=1\",
+        \n    \"next\": \"http://127.0.0.1:8080/Plone/folder-iteration?b_start=6&b_size=1\",
+        \n    \"prev\": \"http://127.0.0.1:8080/Plone/folder-iteration?b_start=4&b_size=1\"\n
+        \ }, \n  \"contributors\": [], \n  \"created\": \"2021-11-25T19:28:04+00:00\",
+        \n  \"creators\": [\n    \"admin\"\n  ], \n  \"description\": \"\", \n  \"effective\":
+        null, \n  \"exclude_from_nav\": false, \n  \"expires\": null, \n  \"id\":
+        \"folder-iteration\", \n  \"is_folderish\": true, \n  \"items\": [\n    {\n
+        \     \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-5-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 5 test.\"\n    }\n  ], \n  \"items_total\":
+        50, \n  \"language\": \"\", \n  \"layout\": \"listing_view\", \n  \"modified\":
+        \"2021-11-25T19:28:08+00:00\", \n  \"nextPreviousEnabled\": false, \n  \"next_item\":
+        {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration-1\", \n    \"@type\":
+        \"Folder\", \n    \"description\": \"\", \n    \"title\": \"Folder Iteration\"\n
+        \ }, \n  \"parent\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone\", \n    \"@type\":
+        \"Plone Site\", \n    \"description\": \"\", \n    \"title\": \"\"\n  }, \n
+        \ \"previous_item\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/Members\",
+        \n    \"@type\": \"Folder\", \n    \"description\": \"Site Users\", \n    \"title\":
+        \"Users\"\n  }, \n  \"relatedItems\": [], \n  \"review_state\": \"private\",
+        \n  \"rights\": \"\", \n  \"subjects\": [], \n  \"title\": \"Folder Iteration\",
+        \n  \"version\": \"current\"\n}"
+    headers:
+      Content-Length:
+      - '2414'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 29 Nov 2021 15:50:42 GMT
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 200
+      message: OK
+version: 1

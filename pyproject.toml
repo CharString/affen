@@ -55,7 +55,9 @@ dev = [
     "hypothesis~=6.14",
     "types-requests~=2.25",
     "pytest-vcr~=1.0",
-    "pytest-cov~=2.12"]
+    "pytest-cov~=2.12",
+    "types-simplejson~=3.17",
+]
 [tool.pdm.scripts]
 docker = "tests/conftest.py"
 test = "pytest --vcr-record=none"

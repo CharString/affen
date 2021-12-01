@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 import re
-from typing import Any
+from typing import Any, List, Union
 from urllib.parse import urldefrag, urljoin, urlsplit, urlunsplit
 
 import requests
@@ -109,7 +109,9 @@ class Session(requests.Session):
         self.headers.update(authorization=f"Bearer {self.__token}")
         return resp
 
-    def items(self, container: str) -> BatchingIterator:
+    def items(
+        self, container: str, **params: Union[str, List[str]]
+    ) -> BatchingIterator:
         """Iterate over all items in `container`
 
         Implements an iterable over
@@ -122,7 +124,7 @@ class Session(requests.Session):
         NB this is not an atomic operation; ie modifing the number of items in
            `container` during iteration may result in items not yielded.
         """
-        return BatchingIterator(container, self)
+        return BatchingIterator(container, params, self)
 
     def _json(self, resp: requests.Response) -> dict:
         return _json(resp)

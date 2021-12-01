@@ -5,8 +5,10 @@
 from html.parser import HTMLParser
 from typing import (
     TYPE_CHECKING,
+    Dict,
     Generator,
     Iterable,
+    List,
     Optional,
     Sequence,
     Tuple,
@@ -43,16 +45,22 @@ def _json(resp: requests.Response) -> dict:
 
 
 class BatchingIterator:
-    def __init__(self, url: str, session: "Session"):
+    def __init__(
+        self,
+        url: str,
+        params: Dict[str, Union[str, List[str]]],
+        session: "Session",
+    ):
         self.session = session
         self.url = url
+        self.params = params
         self._response = None
         self._iterator = None
 
     @property
     def response(self):
         if not self._response:
-            self._response = self.session.get(self.url)
+            self._response = self.session.get(self.url, params=self.params)
         return self._response
 
     def __repr__(self) -> str:
@@ -84,13 +92,17 @@ class BatchingIterator:
         if not stop:
             return iter(
                 self._items(
-                    self.session.get(self.url, params={"b_start": start})
+                    self.session.get(
+                        self.url,
+                        params=dict(**{"b_start": start}, **self.params),
+                    )
                 )
             )
 
         size = stop - start
         self._response = self.session.get(
-            self.url, params={"b_size": size, "b_start": start}
+            self.url,
+            params=dict(**{"b_size": size, "b_start": start}, **self.params),
         )
         items = self._response.json()["items"]
         return items[0] if size == 1 else items

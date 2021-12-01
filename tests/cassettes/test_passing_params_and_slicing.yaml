@@ -1,0 +1,53 @@
+# SPDX-FileCopyrightText: 2021 Centrum Wiskunde en Informatica
+#
+# SPDX-License-Identifier: MPL-2.0
+
+interactions:
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Basic YWRtaW46YWRtaW4=
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.26.0
+      accept:
+      - application/json
+    method: GET
+    uri: http://127.0.0.1:8080/Plone/folder-iteration/@search?b_size=2&b_start=1&portal_type=Document&sort_on=id&sort_order=descending
+  response:
+    body:
+      string: "{\n  \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@search?portal_type=Document\",
+        \n  \"batching\": {\n    \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/@search?b_size=2&b_start=1&portal_type=Document&sort_on=id&sort_order=descending\",
+        \n    \"first\": \"http://127.0.0.1:8080/Plone/folder-iteration/@search?b_start=0&b_size=2&portal_type=Document&sort_on=id&sort_order=descending\",
+        \n    \"last\": \"http://127.0.0.1:8080/Plone/folder-iteration/@search?b_start=48&b_size=2&portal_type=Document&sort_on=id&sort_order=descending\",
+        \n    \"next\": \"http://127.0.0.1:8080/Plone/folder-iteration/@search?b_start=3&b_size=2&portal_type=Document&sort_on=id&sort_order=descending\",
+        \n    \"prev\": \"http://127.0.0.1:8080/Plone/folder-iteration/@search?b_start=0&b_size=2&portal_type=Document&sort_on=id&sort_order=descending\"\n
+        \ }, \n  \"items\": [\n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration/page-8-test\",
+        \n      \"@type\": \"Document\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Page 8 test.\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration/page-7-test\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Page 7 test.\"\n    }\n  ], \n  \"items_total\": 50\n}"
+    headers:
+      Content-Length:
+      - '1270'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 01 Dec 2021 10:07:22 GMT
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 200
+      message: OK
+version: 1

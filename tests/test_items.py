@@ -81,3 +81,31 @@ def test_negative_indexing_raises_error(plone, folder):
 def test_step_slice_raises_error(plone, folder):
     with pytest.raises(NotImplementedError):
         items = plone.items(folder)[1:26:8]
+
+
+@pytest.mark.vcr
+def test_passing_params(plone, folder):
+    pages = plone.items(
+        f"{folder}/@search",
+        portal_type="Document",
+        metadata_fields=["created", "effective"],
+    )
+    for brains in pages:
+        assert brains["created"]
+        assert brains["effective"]
+
+
+def test_passing_params_and_slicing(plone, folder, vcr_cassette):
+    query = plone.items(
+        f"{folder}/@search",
+        portal_type="Document",
+        sort_on="id",
+        sort_order="descending",
+    )
+    assert vcr_cassette.play_count == 0
+
+    titles = [p["title"] for p in query[1:3]]
+    assert titles == [f"Page {i} test." for i in range(8, 6, -1)]
+    assert vcr_cassette.play_count <= 1
+    assert len(query) == 50
+    assert vcr_cassette.play_count <= 1

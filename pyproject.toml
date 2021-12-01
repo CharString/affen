@@ -4,7 +4,6 @@
 
 [project]
 name = "affen"
-version = {use_scm = true}
 description = "plone.restapi for Humans™"
 readme = "README.md"
 authors = [
@@ -14,7 +13,12 @@ dependencies = [
     "requests~=2.26",
 ]
 requires-python = ">=3.7"
-dynamic = ["classifiers", "version"]
+dynamic = ["version"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Plone",
+    "Intended Audience :: Developers",
+]
 license = {text = "MPL-2.0"}
 
 [project.urls]
@@ -46,6 +50,7 @@ exclude_lines = [
 profile = "black"
 
 [tool.pdm]
+version = {use_scm = true}
 [tool.pdm.dev-dependencies]
 dev = [
     "black~=21.7b0",

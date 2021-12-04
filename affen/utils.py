@@ -105,7 +105,7 @@ class BatchingIterator:
             params=dict(**{"b_size": size, "b_start": start}, **self.params),
         )
         items = self._response.json()["items"]
-        return items[0] if size == 1 else items
+        return items if isinstance(key, slice) else items[0]
 
     def _items(
         self, container: Union[str, requests.Response]

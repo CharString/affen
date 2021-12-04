@@ -72,6 +72,13 @@ def test_open_ended_slice_items(plone, folder, vcr_cassette):
 
 
 @pytest.mark.vcr
+def test_slices_of_length_1_return_a_sequence(plone, folder):
+    items = plone.items(folder)[5:6]
+    assert len(items) == 1
+    assert items[0]["title"] == "Page 5 test."
+
+
+@pytest.mark.vcr
 def test_negative_indexing_raises_error(plone, folder):
     with pytest.raises(NotImplementedError):
         items = plone.items(folder)[-1]

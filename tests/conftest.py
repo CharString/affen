@@ -4,7 +4,6 @@
 #
 # SPDX-License-Identifier: MPL-2.0
 
-from pathlib import Path
 from subprocess import run
 from time import sleep
 from typing import Generator
@@ -14,11 +13,16 @@ from requests import ConnectionError, get
 
 from affen import Session
 
-DOCKER_CMD = "docker"
+for DOCKER_CMD in ["docker", "podman"]:
+    try:
+        run([DOCKER_CMD, "--version"])
+    except Exception:
+        continue
+    else:
+        break
 
 
 def docker_run(host, port, site) -> str:
-    global DOCKER_CMD
     proc = run(
         [
             DOCKER_CMD,
@@ -30,17 +34,14 @@ def docker_run(host, port, site) -> str:
             "--detach",
             "--name",
             "plone_restapi_tests",
-            "plone:5-alpine",
+            "docker.io/plone:5-alpine",
         ],
         capture_output=True,
         encoding="utf8",
     )
     if proc.returncode:
-        if DOCKER_CMD == "docker":
-            DOCKER_CMD = "podman"
-            return docker_run(host, port, site)
         raise RuntimeError("Failed to start Plone instance:\n" + proc.stderr)
-    container_id = proc.stdout.strip()
+    # container_id = proc.stdout.strip()
     return "plone_restapi_tests"
 
 
@@ -90,4 +91,4 @@ def plone(plone_site, vcr):
 
 
 if __name__ == "__main__":
-    print("Starting" + docker_run("127.0.0.1", 8080, "Plone"))
+    print("Starting " + docker_run("127.0.0.1", 8080, "Plone"))

@@ -1,4 +1,5 @@
 # SPDX-FileCopyrightText: 2021 Centrum Wiskunde en Informatica
+# SPDX-FileCopyrightText: 2022 Chris Wesseling <chris.wesseling@pm.me>
 #
 # SPDX-License-Identifier: MPL-2.0
 
@@ -75,11 +76,15 @@ class Session(requests.Session):
 
     def request(
         self,
-        method: str,
-        url: Any,
+        method: Union[str, bytes],
+        url: Union[str, bytes],
         *args,
         **kwargs,
     ) -> requests.Response:
+        if isinstance(method, bytes):
+            method = method.decode("ascii")
+        if isinstance(url, bytes):
+            url = url.decode("utf8")
         url = urljoin(self.root, url.lstrip("/"))
         if not url.startswith(self.root):
             raise ValueError(

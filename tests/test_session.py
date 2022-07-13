@@ -92,6 +92,11 @@ def test_accepts_absolute_paths_even_if_api_root_is_not_at_host_root(plone):
     assert plone.get("/@search").ok
 
 
+@pytest.mark.vcr
+def test_request_accepts_bytes(plone):
+    assert plone.request(b"get", b"/").ok
+
+
 @pytest.fixture(scope="module")
 def vcr_config():
     return {

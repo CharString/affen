@@ -1,0 +1,84 @@
+# SPDX-FileCopyrightText: 2022 Chris Wesseling <chris.wesseling@pm.me>
+#
+# SPDX-License-Identifier: MPL-2.0
+#
+interactions:
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+      accept:
+      - application/json
+    method: GET
+    uri: http://127.0.0.1:8080/Plone/
+  response:
+    body:
+      string: "{\n  \"@components\": {\n    \"actions\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/@actions\"\n
+        \   }, \n    \"breadcrumbs\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/@breadcrumbs\"\n
+        \   }, \n    \"contextnavigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/@contextnavigation\"\n
+        \   }, \n    \"navigation\": {\n      \"@id\": \"http://127.0.0.1:8080/Plone/@navigation\"\n
+        \   }\n  }, \n  \"@id\": \"http://127.0.0.1:8080/Plone/\", \n  \"@type\":
+        \"Plone Site\", \n  \"blocks\": {}, \n  \"blocks_layout\": {}, \n  \"description\":
+        \"\", \n  \"id\": \"Plone\", \n  \"is_folderish\": true, \n  \"items\": [\n
+        \   {\n      \"@id\": \"http://127.0.0.1:8080/Plone/front-page\", \n      \"@type\":
+        \"Document\", \n      \"description\": \"Congratulations! You have successfully
+        installed Plone.\", \n      \"review_state\": \"published\", \n      \"title\":
+        \"Welcome to Plone\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/news\",
+        \n      \"@type\": \"Folder\", \n      \"description\": \"Site News\", \n
+        \     \"review_state\": \"published\", \n      \"title\": \"News\"\n    },
+        \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/events\", \n      \"@type\":
+        \"Folder\", \n      \"description\": \"Site Events\", \n      \"review_state\":
+        \"published\", \n      \"title\": \"Events\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/Members\", \n      \"@type\": \"Folder\", \n
+        \     \"description\": \"Site Users\", \n      \"review_state\": \"private\",
+        \n      \"title\": \"Users\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration\",
+        \n      \"@type\": \"Folder\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Folder Iteration\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration-1\", \n      \"@type\": \"Folder\",
+        \n      \"description\": \"\", \n      \"review_state\": \"private\", \n      \"title\":
+        \"Folder Iteration\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration-2\",
+        \n      \"@type\": \"Folder\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Folder Iteration\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration-3\", \n      \"@type\": \"Folder\",
+        \n      \"description\": \"\", \n      \"review_state\": \"private\", \n      \"title\":
+        \"Folder Iteration\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration-4\",
+        \n      \"@type\": \"Folder\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Folder Iteration\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration-5\", \n      \"@type\": \"Folder\",
+        \n      \"description\": \"\", \n      \"review_state\": \"private\", \n      \"title\":
+        \"Folder Iteration\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration-6\",
+        \n      \"@type\": \"Folder\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Folder Iteration\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration-7\", \n      \"@type\": \"Folder\",
+        \n      \"description\": \"\", \n      \"review_state\": \"private\", \n      \"title\":
+        \"Folder Iteration\"\n    }, \n    {\n      \"@id\": \"http://127.0.0.1:8080/Plone/folder-iteration-8\",
+        \n      \"@type\": \"Folder\", \n      \"description\": \"\", \n      \"review_state\":
+        \"private\", \n      \"title\": \"Folder Iteration\"\n    }, \n    {\n      \"@id\":
+        \"http://127.0.0.1:8080/Plone/folder-iteration-9\", \n      \"@type\": \"Folder\",
+        \n      \"description\": \"\", \n      \"review_state\": \"private\", \n      \"title\":
+        \"Folder Iteration\"\n    }\n  ], \n  \"items_total\": 14, \n  \"parent\":
+        {}, \n  \"title\": \"\"\n}"
+    headers:
+      Content-Length:
+      - '3397'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 13 Jul 2022 18:23:41 GMT
+      Server:
+      - waitress
+      Via:
+      - waitress
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Zope (www.zope.org), Python (www.python.org)
+    status:
+      code: 200
+      message: OK
+version: 1

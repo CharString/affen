@@ -55,7 +55,7 @@ version = {use_scm = true}
 dev = [
     "black~=21.7b0",
     "pre-commit~=2.13",
-    "mypy~=0.910",
+    "mypy @ git+https://github.com/python/mypy.git",  # see python/mypy issue #10633 on GitHub
     "pytest~=6.2",
     "hypothesis~=6.14",
     "types-requests~=2.25",
